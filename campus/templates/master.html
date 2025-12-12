@@ -1,0 +1,13 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}{% endblock title %}</title>
+        {% block stylesheet %}{% endblock stylesheet %}
+    </head>
+
+    <body>
+        {% block content %}{% endblock content %}
+    </body>
+</html>

@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+html{
+    font-size: 4px;
+}
+
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: #FFF2CC;
+}
+
+.content{
+    margin: 0 17rem;
+    max-width: 100%;
+}
+
+
+/* Header */
+
+.header{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#camp{
+    color: #2400FF;
+}
+
+#us{
+    color: #FFBF00;
+}
+
+
+.header p{
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+button{
+    padding: 3rem 5rem;
+    font-size: 3.5rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    border-width: 0.5rem;
+    border-style: solid;
+    margin: 0 2rem;
+}
+
+#register{
+    border-color: #FFBF00;
+    color: #332600;
+    background-color: #FFF2CC;
+}
+
+#upload{
+    border-color: #2400FF;
+    color: #D3CCFF;
+    background-color: #2400FF;
+}
+
+#register:hover{
+    background-color: #ffeaaa;
+    border: 0.5rem solid #332600;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#upload:hover{
+    background-color: #6d55ff;
+    color: #070033;
+    border: 0.5rem solid #070033;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+/* Hero section */
+
+.main h1{
+    font-size: 18rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+#small-text{
+    color: #332600;
+    font-size: 7rem;
+    font-weight: bold;
+    margin-top: -11rem;
+    margin-bottom: 0;
+}
+
+input[type="search"]{
+    background-color: #f4f4f4;
+    color: #332600;
+    padding: 4.5rem 8rem;
+    font-size: 4rem;
+    border-radius: 10rem;
+    border: 0.25rem solid #332600;
+    width: 40vw;
+    margin-bottom: 2.5rem;
+    margin-top: -20rem;
+}
+
+#search{
+    padding: 16px 20px;
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin-left: -1.5rem;
+    border-radius: 10rem;
+    background-color: #FFBF00;
+    color: #332600;
+    border: 0.25rem solid #332600;
+}
+
+#search:hover{
+    background-color: #ffdf80;
+    border-width: 0.4rem;
+    transform: scale(1.01);
+}
+
+/* Featured Courses */
+
+h2{
+    color: #332600;
+    font-size: 7rem;
+    font-weight: bold;
+}
+
+.card{
+    min-width: 17vw;
+    height: 23vh;
+    background-color: #492aff;
+    color: #D3CCFF;
+    border-radius: 4rem;
+    display: grid;
+    place-items: center;
+}
+
+.card h3{
+    width: 5vw;
+    font-size: 6.5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.cards-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow-x: auto;
+    gap: 8rem;
+}
+
+.cards-container::-webkit-scrollbar{
+    display: none;
+}
+
+/* Filtering by Level */
+
+.levels-container{
+    margin-top: 15rem;
+}
+
+h2{
+    color: #332600;
+    font-size: 7rem;
+    font-weight: bold;
+}
+
+.level-cards{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.level-card{
+    display: block;
+    min-width: 35vw;
+    padding: 9rem 15rem;
+    background-color: #D3CCFF;
+    border: 0.75rem solid #070033;
+    color: #070033;
+    border-radius: 3rem;
+    text-align: center;
+    margin-bottom: 6rem;
+    font-size: 6rem;
+    font-weight: 500;
+}
+
+.level-card:hover{
+    background-color: #9280FF;
+}
+
+
+/* Subjects */
+
+.subjects-container{
+    margin-top: 15rem;
+}
+
+.subjects-container h2{
+    color: #332600;
+    font-size: 7rem;
+    font-weight: bold;
+}
+
+.subjects-cards{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.subjects-cards a{
+    text-decoration: none;
+}
+
+.s-card{
+    min-width: 20.5vw;
+    padding: 5rem 15rem;
+    background-color: #ffca2a;
+    border: 0.5rem solid #332600;
+    color: #332600;
+    border-radius: 3rem;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 5rem;
+    font-size: 5rem;
+    font-weight: 400;
+}
+
+.s-card:hover{
+    background-color: #ffdf80;
+    transform: scale(1.05);
+    font-weight: 600;
+}
+
+
+/* Upload button */
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10rem 0;
+}
+
+#button1-2{
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    text-decoration: none;
+}
+
+.upload{
+    padding: 4rem 8rem;
+    font-size: 4.5rem;
+    border-radius: 3rem;
+    background-color: #2400FF;
+    color: #D3CCFF;
+    border: 0.5rem solid #2400FF;
+}
+
+.upload:hover{
+    background-color: #6d55ff;
+    color: #070033;
+    border: 0.5rem solid #070033;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+/* Register button */
+
+.register{
+    padding: 4rem 8rem;
+    font-size: 4.5rem;
+    border-radius: 3rem;
+    background-color: #FFF2CC;
+    color: #332600;
+    border: 0.5rem solid #FFBF00;
+}
+
+.register:hover{
+    background-color: #ffeaaa;
+    border: 0.5rem solid #332600;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+a{
+    text-decoration: none;
+}

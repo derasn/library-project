@@ -1,0 +1,74 @@
+{% extends "master.html" %}
+{% load static %}
+
+{% block title %}
+    Upload a Material
+{% endblock title %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="{% static 'css/upload.css' %}">
+{% endblock stylesheet %}
+
+
+{% block content %}
+<div class='content'>
+    <div class='header'>
+        <p id='camp'>Camp<span>US.</span></p>
+    </div>
+
+    <div class='main'>
+        <a href="{% url 'home' %}" class="previous-page">Previous page</a>
+
+        <h2>Upload Material Form</h2>
+
+        {% if errors %}
+            <div class="error-container">
+                {% for error in errors %}
+                    <p class="error-message">{{error}}</p>
+                {% endfor %}
+            </div>
+        {% endif %}
+
+        <form method='POST' enctype="multipart/form-data" action="" class="upload-form">
+            {% csrf_token %}
+
+
+            <div class="question">
+                <label for="code">Course Code </label>
+                    <select id="code" name="course_code" required>
+                        <option value="">--select--</option>
+                        {% for course in courses %}
+                            <option value="{{course.id}}">{{course.course_code}}</option>
+                        {% endfor %}
+                    </select>
+            </div>
+                        
+            
+            <div class="question">
+                <label for="description">Description</label>
+                <textarea id="description" name="description" placeholder="Past questions, Mr A's note" required></textarea>
+            </div>
+            
+            <div class="question">
+                <label for="year">Year Used</label>
+                <input type="text" id="code" name="year_used" placeholder="2024" required>
+            </div>
+            
+            <div class="question">
+                <label for="file-upload" class="custom-upload">File Upload</label>
+                <input type="file" id="file-upload" name="file" required>
+            </div>
+
+            
+
+            <div class="button">
+                <button type="submit" id="upload-btn">Upload material</button>
+            </div>
+
+        </form>
+
+        
+
+    </div>
+</div>
+{% endblock content %}

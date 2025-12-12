@@ -1,0 +1,39 @@
+{% extends "master.html" %}
+{% load static %}
+
+{% block title %}
+    Showing results for "{{query}}"
+{% endblock title %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="{% static 'css/search_results.css' %}">
+{% endblock stylesheet %}
+
+
+{% block content %}
+    <div class="content">
+        <a href="{% url 'home' %}" class="previous-page">Previous page</a>
+
+        
+        <h1>Showing results for: "{{query}}"</h1>
+
+        <form method="GET">
+            <input type="search" name="q" value="{{query}}" placeholder="Search">
+        </form>
+
+        {% if results %}
+            {% for material in results %}
+            <div class="material-details">
+                <div class="course-code">{{material.course_code}}</div>
+                <div class="description">{{material.description}}</div>
+                <div class="year-used">{{material.year_used}}</div>
+                <div class="view"><a href="{{material.file.url}}" target="_blank" >View</a></div>
+                <div class="download"><a href="{{material.file.url}}" download>Download</a></div>
+            </div>
+            <hr>
+            {% endfor %}
+        {% else %}
+            <p>Sorry, no results found.</p>
+        {% endif %}     
+    </div>
+{% endblock content %}

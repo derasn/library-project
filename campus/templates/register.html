@@ -1,0 +1,63 @@
+{% extends "master.html" %}
+{% load static %}
+
+{% block title %}
+    Register a Course
+{% endblock title %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="{% static 'css/register.css' %}">
+{% endblock stylesheet %}
+
+
+{% block content %}
+<div class='content'>
+    <div class='header'>
+        <p id='camp'>Camp<span>US.</span></p>
+    </div>
+
+    <div class='main'>
+        <a href="{% url 'home' %}" class="previous-page">Previous page</a>
+
+        <h2>Register Course Form</h2>
+
+        <form method='POST' enctype="multipart/form-data" class="register-form">
+            {% csrf_token %}
+
+
+            <div class="question">
+                <label for="code">Course Code </label>
+                <input type="text" id="code" name="course_code" placeholder="COS 101" required>
+            </div>
+            
+            <div class="question">
+                <label for="title">Course Title </label>
+                <input type="text" id="title" name="title" placeholder="Introduction to Computer Science" required>
+            </div>
+            
+            <div class="question">
+                <label for="subject">Subject Category</label>
+                <select id="subject" name="subject" required>
+                    <option value="">--select--</option>
+                    {% for subject in subjects %}
+                        <option value="{{subject.id}}">{{subject.name}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="question">
+                <label for="level">Level</label>
+                <input type="text" id="level" name="level" placeholder="100, 200, 300, 400" required>
+            </div>
+
+            <div class="button">
+                <button type="submit" id="register-btn">Register course</button>
+            </div>
+
+        </form>
+
+        
+
+    </div>
+</div>
+{% endblock content %}

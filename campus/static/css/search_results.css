@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+html{
+    font-size: 4px;
+}
+
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: #FFF2CC;
+}
+
+.content{
+    margin: 15rem 17rem;
+    max-width: 100%;
+}
+
+/* Main content */
+
+input[type="search"]{
+    background-color: #f3f5f7;
+    color: #332600;
+    padding: 2.5rem 5rem;
+    font-size: 3.5rem;
+    border-radius: 2rem;
+    border: 0.25rem solid #332600;
+    width: 35vw;
+    margin-bottom: 10rem;
+    margin-top: 0;
+}
+
+.previous-page{
+    font-size: 4rem;
+    text-decoration: none;
+    color: #332600;
+    margin: 3rem 0;
+}
+
+.previous-page::before{
+    content: ' ← ';
+    position: relative;
+    color: #332600;
+}
+
+.previous-page:hover{
+    color: #2400FF;
+}
+
+h1{
+    color: #332600;
+    font-size: 10rem;
+    font-weight: bold;
+    margin-top: 10rem;
+}
+
+.material-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem;
+    padding: 3rem 8rem;
+    color: #332600;
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.course-code{
+    width: 40vw;
+}
+
+.description{
+    width: 20vw;
+}
+
+.year-used{
+    width: 10vw;
+}
+
+.view{
+    width: 5vw;
+}
+
+a{ /* Download and view */
+    color: #2400FF;
+    text-decoration: none;
+}
+
+a:hover{
+    color: red;
+}
+
+hr{
+    border: 0.25rem solid #554000;
+    width: 89vw;
+    text-align: center;
+    margin: 5rem 0;
+}
+
+hr:last-child{
+    display: none;
+}
+
+p{ /* For error messages i.e sorry, no materials */
+    margin: 0.5rem;
+    padding: 3rem 8rem;
+    color: #332600;
+    font-size: 5rem;
+    font-weight: 400; 
+}

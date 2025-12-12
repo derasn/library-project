@@ -1,0 +1,60 @@
+{% extends "master.html" %}
+{% load static %}
+
+{% block title %}
+    {{subject.name}} Materials
+{% endblock title %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="{% static 'css/subject_courses.css' %}">
+{% endblock stylesheet %}
+
+
+{% block content %}
+    <div class="content">
+        <div class='header'>
+            <p id='camp'>Camp<span>US.</span></p>
+
+            <div class='auth-buttons'>
+                <a href="{% url 'register' %}"><button id='register'>Register a course</button></a>
+                <a href="{% url 'upload' %}"><button id='upload'>Upload a material</button></a>
+            </div>
+        </div>
+        
+        <div class="others">
+
+            <a href="{% url 'home' %}" class="previous-page">Previous page</a>
+
+            <h1>{{subject.name}} Materials</h1>
+        
+            <div class="courses">
+                {% if not subject.has_materials %}
+                    <p>Sorry, no available material yet.</p>
+                {% else %}
+                    {% for course in courses %}
+                        <div class="course-heading">
+                            <div class="course-code">{{course.course_code}}</div>
+                            <div class="course-title">{{course.title}}</div>
+                        </div>
+
+                        <div class="materials">
+                            {% for material in course.materials.all %}
+                                <div class="material-details">
+                                    <div class="description">{{material.description}}</div>
+                                    <div class="year_used">Used in {{material.year_used}}</div>
+                                    <div class="view"><a href="{{ material.file.url }}" target="_blank">View</a></div>
+                                    <div class="download"><a href="{{ material.file.url }}" download>Download</a></div>
+                                </div>
+                                <hr>
+                            {% empty %}
+                                <p>Sorry, no available material yet.</p>
+                            {% endfor %}
+                        </div>
+                        <hr>
+                    {% endfor %}
+                {% endif %}
+            </div>
+
+        </div>
+    </div>
+{% endblock content %}

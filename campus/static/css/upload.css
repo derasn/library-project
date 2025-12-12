@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+html{
+    font-size: 4px;
+}
+
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: #FFF2CC;
+}
+
+.content{
+    margin: 0 17rem;
+}
+
+
+/* Header */
+
+.header{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#camp{
+    color: #2400FF;
+}
+
+span{
+    color: #FFBF00;
+}
+
+.header p{
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+
+/* Main form */
+
+.main{
+    margin: 10rem 0;
+}
+
+.previous-page{
+    text-decoration: none;
+    color: #332600;
+    margin: 3rem 0;
+    font-size: 4rem;
+}
+
+.previous-page::before{
+    content: '← ';
+    position: relative;
+    color: #332600;
+}
+
+.previous-page:hover{
+    color: #2400FF;
+}
+
+h2{
+    color: #332600;
+    font-size: 8rem;
+    font-weight: bold;
+    margin: 5rem 0 10rem;
+    text-align: center;
+}
+
+.error-message{
+    font-size: 4rem;
+    color: red;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.upload-form{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+.question{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 9rem;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+
+label{
+    font-size: 5rem;
+    font-weight: 500;
+    color: #332600;
+}
+
+input, select, textarea{
+    width: 30vw;
+    padding: 2rem 4rem;
+    font-size: 4rem;
+    border-radius: 2rem;
+    border: 0.25rem solid #332600;
+    background-color: #f3f5f7;
+}
+
+input::-webkit-file-upload-button{
+    color: #332600;
+    background-color: #D3CCFF;
+    border: 0.25rem solid #332600;
+    padding: 2rem 3rem;
+    margin-right: 3rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
+    font-style: italic;
+}
+
+/* Upload Button */
+
+.button{
+    display: flex;
+    justify-content: center;
+}
+
+#upload-btn{
+    background-color: #FFBF00;
+    color: #332600;
+    border: none;
+    font-size: 4rem;
+    font-weight: 500;
+    margin-top: 5rem;
+    padding: 4rem 8rem;
+    border-radius: 2rem;
+}
+
+#upload-btn:hover{
+    background-color: #ffca2a;
+    border: 0.5rem solid #332600;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}

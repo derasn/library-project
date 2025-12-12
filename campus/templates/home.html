@@ -1,0 +1,87 @@
+{% extends "master.html" %}
+{% load static %}
+
+{% block title %}
+    CampUs.
+{% endblock title %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock stylesheet %}
+
+
+{% block content %}
+<div class='content'>
+    <div class='header'>
+        <p id='camp'>Camp<span id="us">US.</span></p>
+
+        <div class='auth-buttons'>
+            <a href="{% url 'register' %}"><button id='register'>Register a course</button></a>
+            <a href="{% url 'upload' %}"><button id='upload'>Upload a material</button></a>
+        </div>
+    </div>
+
+    <div class='main'>
+        <h1 id='camp'>Camp<span id="us">US.</span><h1>
+        <p id="small-text">for Computer Science Students</p>
+
+        <form method="GET" action="{% url 'search' %}">
+            <div class="search-container">
+                <input type='search' name="q" placeholder='Search for a course or material' value='{{request.GET.q}}' >
+                <button type="submit" id="search">Search</button>
+            </div>
+        </form>
+
+
+        <h2>Featured Courses</h2>
+        <div class='cards-container'>
+            {% for course in courses %}
+                {% if course.featured == True %}
+                    <a href="{% url 'course_details' course.id %}" id="ft-link">
+                        <div class='card'>  
+                            <h3>{{course.course_code}}</h3>
+                        </div>
+                    </a>
+                {% else %}
+                    <p>No featured courses available.</p>
+                {% endif %}
+            {% endfor %}
+        </div>
+
+
+        <div class="levels-container">
+            <h2>By Level</h2>
+
+            <div class="level-cards">
+                {% for level in levels %}
+                    <a href="{% url 'level_courses' level %}">
+                        <div class="level-card">{{level}} Level</div>
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+
+
+        <div class="subjects-container">
+            <h2>Available Subjects</h2>
+
+            <div class="subjects-cards">
+                {% for subject in subject %}
+                    <a href="{% url 'subject_courses' subject.id %}">
+                        <div class="s-card">{{subject.name}}</div>
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+
+
+        <div class="buttons">
+            <div id='button1-2'>
+                <a href="{% url 'register' %}"><button class='register'>Register a course</button></a>
+                <a href="{% url 'upload' %}"><button class='upload'>Upload a material</button></a>
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock content %}
