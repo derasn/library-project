@@ -77,9 +77,8 @@ WSGI_APPLICATION = 'library.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default='sqlite:///db.sqlite3',
-        conn_max_age=600,
-        ssl_require=True
+        default='postgresql://dera:euLCv7Po1dbA3Q2SFeo9vEOoJ2i5OBg7@dpg-d4u3dh4hg0os739ncce0-a/postgre_instance',
+        conn_max_age=600
     )
 }
 
