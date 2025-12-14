@@ -10,7 +10,7 @@ from django.contrib.auth.models import User
 def home(request):
     subject = Subject.objects.all()
     course = Course.objects.all()
-    levels = Course.objects.values_list('level', flat=True ).distinct()
+    levels = [100, 200, 300, 400]
 
     context = {
         'subject' : subject,
