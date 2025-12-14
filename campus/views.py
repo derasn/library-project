@@ -11,11 +11,13 @@ def home(request):
     subject = Subject.objects.all()
     course = Course.objects.all()
     levels = [100, 200, 300, 400]
+    featured_courses = Course.objects.filter(featured=True)
 
     context = {
         'subject' : subject,
         'courses' : course,
         'levels' : levels,
+        'featured_courses' : featured_courses,
     }
     return render(request,'home.html', context)
 

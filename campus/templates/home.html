@@ -35,17 +35,17 @@
 
         <h2>Featured Courses</h2>
         <div class='cards-container'>
-            {% for course in courses %}
-                {% if course.featured == True %}
+            {% if featured_courses %}
+                {% for course in featured_courses %}
                     <a href="{% url 'course_details' course.id %}" id="ft-link">
                         <div class='card'>  
                             <h3>{{course.course_code}}</h3>
                         </div>
                     </a>
-                {% else %}
-                    <p>No featured courses available.</p>
-                {% endif %}
-            {% endfor %}
+                {% endfor %}
+            {% else %}
+                <p>No featured courses available.</p>
+            {% endif %}
         </div>
 
 
