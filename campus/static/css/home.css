@@ -131,6 +131,14 @@ h2{
     font-weight: bold;
 }
 
+p{ /* For error messages i.e sorry, no materials */
+    margin: 0.5rem;
+    padding: 3rem 8rem;
+    color: #332600;
+    font-size: 5rem;
+    font-weight: 400; 
+}
+
 .card{
     min-width: 17vw;
     height: 23vh;
