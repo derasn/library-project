@@ -10,5 +10,4 @@ urlpatterns = [
     path('level/<str:level>/', views.level_courses, name='level_courses'),
     path('course/<int:course_id>/', views.course_details, name='course_details'),
     path('search/', views.search, name='search'),
-    path("create-superuser/", views.create_superuser),
 ]

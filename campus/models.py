@@ -15,7 +15,7 @@ def validate_file_extension(value):
 def validate_file_size(value):
     file_size = value.size
 
-    max_size = 10 * 1024 * 1024
+    max_size = 5 * 1024 * 1024
 
     if file_size > max_size:
         raise ValidationError("The file you're trying to upload is too large. Maximum size allowed is 10MB.")

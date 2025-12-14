@@ -98,8 +98,6 @@ def upload_material(request):
                 return redirect('home')
             except ValidationError as err:
                 errors = err.messages
-            return HttpResponse('Material uploaded!')
-
 
     return render(request, 'upload.html', {'courses': courses, 'errors': errors})
 
@@ -128,15 +126,3 @@ def register_course(request):
             return redirect('home')
         
     return render(request, 'register.html', {'subjects': subjects})
-
-
-
-def create_superuser(request):
-    if not User.objects.filter(username="admin").exists():
-        User.objects.create_superuser(
-            username="dera",
-            email="dera@gmail.com",
-            password="deralovesdjango"
-        )
-        return HttpResponse("Superuser created!")
-    return HttpResponse("Superuser already exists.")
