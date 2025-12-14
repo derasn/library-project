@@ -21,7 +21,7 @@ body{
 /* Header */
 
 .header{
-    margin-top: 7rem;
+    margin-top: 10rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -91,7 +91,7 @@ button{
     color: #332600;
     font-size: 7rem;
     font-weight: bold;
-    margin-top: -16rem;
+    margin-top: -12rem;
     margin-bottom: 0;
 }
 
@@ -189,9 +189,8 @@ h2{
 
 .level-card{
     display: block;
-    width: 25vw;
-    min-width: 100px;
-    max-width: 200px;
+    width: 35vw;
+    min-width: 280px;
     padding: 9rem 15rem;
     background-color: #D3CCFF;
     border: 0.75rem solid #070033;
@@ -239,8 +238,7 @@ h2{
 
 .s-card{
     width: 20.5vw;
-    min-width: 150px;
-    max-width: 300px;
+    min-width: 140px;
     padding: 5rem 15rem;
     background-color: #ffca2a;
     border: 0.5rem solid #332600;
