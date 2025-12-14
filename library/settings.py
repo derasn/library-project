@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-i9sb!dodjdq-moij-_605jwfuiu+p5^f1yl2i66_v5^awkxr8m
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['campus-library.onrender.com', 'localhost', '127.0.0.1',]
+ALLOWED_HOSTS = ['campus.onrender.com',]
 
 
 # Application definition
@@ -50,6 +50,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware'
 ]
 
 ROOT_URLCONF = 'library.urls'
@@ -76,10 +77,14 @@ WSGI_APPLICATION = 'library.wsgi.application'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.config(
-        default='postgresql://dera:euLCv7Po1dbA3Q2SFeo9vEOoJ2i5OBg7@dpg-d4u3dh4hg0os739ncce0-a/postgre_instance',
-        conn_max_age=600
-    )
+    'default': {
+        'ENGINE' : 'django.db.backends.postgresql',
+        'NAME' : os.environ.get('DB_NAME'),
+        'USER' : os.environ.get('DB_USER'),
+        'PASSWORD' : os.environ.get('DB_PASSWORD'),
+        'HOST' : os.environ.get('DB_HOST'),
+        'PORT' : os.environ.get('DB_PORT', '5432'),
+    }
 }
 
 
