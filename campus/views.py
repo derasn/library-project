@@ -2,7 +2,8 @@ from django.shortcuts import render, get_object_or_404, redirect
 from .models import Subject, Course, Material
 from django.core.exceptions import ValidationError
 from django.db.models import Q
-from rapidfuzz.fuzz import partial_ratio
+from django.http import HttpResponse
+from django.contrib.auth.models import User
 
 # Create your views here.
 
@@ -97,6 +98,7 @@ def upload_material(request):
                 return redirect('home')
             except ValidationError as err:
                 errors = err.messages
+            return HttpResponse('Material uploaded!')
 
 
     return render(request, 'upload.html', {'courses': courses, 'errors': errors})
@@ -126,3 +128,15 @@ def register_course(request):
             return redirect('home')
         
     return render(request, 'register.html', {'subjects': subjects})
+
+
+
+def create_superuser(request):
+    if not User.objects.filter(username="admin").exists():
+        User.objects.create_superuser(
+            username="dera",
+            email="dera@gmail.com",
+            password="deralovesdjango"
+        )
+        return HttpResponse("Superuser created!")
+    return HttpResponse("Superuser already exists.")
