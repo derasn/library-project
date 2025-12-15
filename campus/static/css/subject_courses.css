@@ -110,6 +110,7 @@ h1{
     display: flex;
     flex-direction: column;
     justify-self: flex-start;
+    margin-bottom: 4rem;
 }
 
 .course-heading{
@@ -144,7 +145,7 @@ h1{
     margin: 0.5rem;
     padding: 3rem 8rem;
     color: #332600;
-    font-size: 4rem;
+    font-size: 4.5rem;
     font-weight: 400;
 }
 
@@ -156,7 +157,7 @@ p{ /* For error messages i.e sorry, no materials */
     margin: 0.5rem;
     padding: 3rem 8rem;
     color: #332600;
-    font-size: 5rem;
+    font-size: 4.5rem;
     font-weight: 400; 
 }
 
