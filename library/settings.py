@@ -141,6 +141,7 @@ DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.RawMediaCloudinaryStorage'
 
 CLOUDINARY_STORAGE = {
     'RESOURCE_TYPE' : 'raw',
+    'DELIVERY_TYPE' : 'upload',
 }
 
 # Default primary key field type

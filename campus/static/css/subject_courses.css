@@ -125,10 +125,6 @@ h1{
     text-transform: uppercase;
 }
 
-.course-title{
-    width: 85vw;
-}
-
 .materials{
     color: #332600;
     display: flex;
