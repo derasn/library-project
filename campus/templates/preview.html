@@ -3,10 +3,9 @@
 {% block content %}
     <h2>{{material.title}}</h2>
 
-    <embed
+    <iframe
         src = "{{ material.file.url }}"
-        type = "application/pdf"
         width = "100%"
         height = "650px"
-    >
+    ></iframe>
 {% endblock content %}
