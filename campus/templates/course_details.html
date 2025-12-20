@@ -32,7 +32,10 @@
                     <div class="material-details">
                         <div class="description">{{material.description}}</div>
                         <div class="year_used">Used in {{material.year_used}}</div>
-                        <div class="view"><a href="{{ material.file.url }}" target="_blank">View</a></div>
+                        <div class="view">
+                            {% if ".pdf" in material.file.name|lower %}
+                                <a href="{% url 'preview' material.id %}">Preview</a></div>
+                            {% endif %}
                         <div class="download"><a href="{{ material.file.url }}" download>Download</a></div>
                     </div>
                 {% empty %}
