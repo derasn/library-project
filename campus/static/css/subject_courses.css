@@ -145,7 +145,7 @@ h1{
 }
 
 .description{
-    width: 20vw;
+    width: 15vw;
 }
 
 p{ /* For error messages i.e sorry, no materials */
@@ -171,7 +171,7 @@ a:hover{
 
 hr{
     border: 0.25rem solid #554000;
-    width: 88vw;
+    width: 85vw;
     text-align: center;
     margin: 7rem 0;
 }

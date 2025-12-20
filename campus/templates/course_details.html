@@ -34,8 +34,9 @@
                         <div class="year_used">Used in {{material.year_used}}</div>
                         <div class="view">
                             {% if ".pdf" in material.file.name|lower %}
-                                <a href="{% url 'preview' material.id %}">Preview</a></div>
+                                <a href="{% url 'preview' material.id %}">Preview</a>
                             {% endif %}
+                        </div>
                         <div class="download"><a href="{{ material.file.url }}" download>Download</a></div>
                     </div>
                 {% empty %}
