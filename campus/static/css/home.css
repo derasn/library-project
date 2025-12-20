@@ -91,7 +91,7 @@ button{
     color: #332600;
     font-size: 7rem;
     font-weight: bold;
-    margin-top: -11rem;
+    margin-top: -10rem;
     margin-bottom: 0;
 }
 
@@ -104,7 +104,7 @@ input[type="search"]{
     border: 0.25rem solid #332600;
     width: 40vw;
     margin-bottom: 4rem;
-    margin-top: -20rem;
+    margin-top: -18rem;
 }
 
 #search{

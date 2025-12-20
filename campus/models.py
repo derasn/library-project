@@ -54,7 +54,7 @@ class Material(models.Model):
     year_used = models.IntegerField(null=False)
     file = models.FileField(upload_to='materials/', validators=[validate_file_extension, validate_file_size] , null=True, blank=True)
     uploaded_at = models.DateTimeField(auto_now_add=True)
-    file_hash = models.CharField(max_length=64, blank=True, unique=True)
+    file_hash = models.CharField(max_length=64, blank=True, null=True, unique=True)
     
     def __str__(self):
         return f"{self.course_code} - {self.description}"
