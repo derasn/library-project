@@ -153,7 +153,7 @@ def register_course(request):
 
 
 def preview_material(request, material_id):
-    material = get_object_or_404(Material, pk=material_id)
+    material = get_object_or_404(Material, id=material_id)
     context = {
         'material' : material,
     }
