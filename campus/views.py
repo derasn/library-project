@@ -6,10 +6,13 @@ import hashlib
 
 # Create your views here.
 
-def get_file_hash(file):
+def get_file_hash(uploaded_file):
     hasher = hashlib.sha256()
-    for chunk in file.chunks():
+
+    for chunk in uploaded_file.chunks():
         hasher.update(chunk)
+
+    uploaded_file.seek(0)
 
     return hasher.hexdigest()
 
@@ -95,7 +98,8 @@ def upload_material(request):
         uploaded_material = request.FILES.get('file')
 
         if uploaded_material:
-            file_hash = get_file_hash(upload_material)
+            file_hash = get_file_hash(uploaded_material)
+
             if Material.objects.filter(file_hash=file_hash):
                 errors.append("Hi, so this material has already been uploaded, thanks for the effort.")
 
