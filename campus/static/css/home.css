@@ -142,7 +142,7 @@ p{ /* For error messages i.e sorry, no materials */
 
 .card{
     min-width: 17vw;
-    padding: 5rem 0;
+    padding: 5rem 2rem;
     background-color: #492aff;
     color: #D3CCFF;
     border-radius: 4rem;

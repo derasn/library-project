@@ -2,10 +2,17 @@ from django.shortcuts import render, get_object_or_404, redirect
 from .models import Subject, Course, Material
 from django.core.exceptions import ValidationError
 from django.db.models import Q
-from django.http import HttpResponse
-from django.contrib.auth.models import User
+import hashlib
 
 # Create your views here.
+
+def get_file_hash(file):
+    hasher = hashlib.sha256()
+    for chunk in file.chunks():
+        hasher.update(chunk)
+
+    return hasher.hexdigest()
+
 
 def home(request):
     subject = Subject.objects.all()
@@ -88,18 +95,29 @@ def upload_material(request):
         uploaded_material = request.FILES.get('file')
 
         if uploaded_material:
-            new_upload = Material(
-                course_code = course_code,
-                description = material_description,
-                year_used = year_used,
-                file = uploaded_material
-            )
-            try:
-                new_upload.full_clean()
-                new_upload.save()
-                return redirect('home')
-            except ValidationError as err:
-                errors = err.messages
+            file_hash = get_file_hash(upload_material)
+            if Material.objects.filter(file_hash=file_hash):
+                errors.append("Hi, so this material has already been uploaded, thanks for the effort.")
+
+            else:
+                new_upload = Material(
+                    course_code = course_code,
+                    description = material_description,
+                    year_used = year_used,
+                    file = uploaded_material,
+                    file_hash = file_hash,
+                )
+
+                try:
+                    new_upload.full_clean()
+                    new_upload.save()
+                    return redirect('home')
+                
+                except ValidationError as err:
+                    errors = err.messages
+
+        else:
+            errors.append("Please select a file to upload.")
 
     return render(request, 'upload.html', {'courses': courses, 'errors': errors})
 
@@ -128,3 +146,11 @@ def register_course(request):
             return redirect('home')
         
     return render(request, 'register.html', {'subjects': subjects})
+
+
+def preview_material(request, pk):
+    material = get_object_or_404(Material, pk=pk)
+    context = {
+        'material' : material,
+    }
+    return render(request, 'preview.html', context)
