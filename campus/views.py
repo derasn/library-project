@@ -152,8 +152,8 @@ def register_course(request):
     return render(request, 'register.html', {'subjects': subjects})
 
 
-def preview_material(request, pk):
-    material = get_object_or_404(Material, pk=pk)
+def preview_material(request, material_id):
+    material = get_object_or_404(Material, pk=material_id)
     context = {
         'material' : material,
     }
