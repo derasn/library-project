@@ -170,6 +170,61 @@ p{ /* For error messages i.e sorry, no materials */
     display: none;
 }
 
+/* Responsive Cards */
+.cards-container{
+    gap: 2.5rem;
+    flex-wrap: wrap;
+}
+.card{
+    min-width: 180px;
+    width: clamp(180px, 17vw, 320px);
+    padding: clamp(1rem, 3vw, 4rem);
+    background-color: #492aff;
+    color: #D3CCFF;
+    border-radius: 2.5rem;
+    display: grid;
+    place-items: center;
+}
+.card h3{
+    width: auto;
+    font-size: clamp(1.6rem, 4vw, 2.6rem);
+    text-align: center;
+    text-transform: uppercase;
+}
+.s-card{
+    min-width: 140px;
+    width: clamp(140px, 20vw, 220px);
+    max-width: 220px;
+}
+.level-card{
+    width: clamp(220px, 35vw, 560px);
+}
+@media (max-width: 768px){
+    html{ font-size: 6px; }
+    .content{ margin: 0 2rem; }
+    .header{ flex-direction: column; align-items: flex-start; gap: 1rem; }
+    input[type="search"]{ width: 78vw; }
+    .cards-container{
+        gap: 1.25rem;
+        justify-content: center;
+        overflow-x: visible;
+    }
+    .card,
+    .level-card,
+    .s-card{
+        width: 100%;
+        max-width: 600px;
+        padding: clamp(1rem, 5vw, 2.5rem);
+        border-radius: 1.5rem;
+        font-size: clamp(1rem, 3.5vw, 1.6rem);
+    }
+    .card h3{ font-size: 1.8rem; }
+}
+@media (min-width: 769px) and (max-width: 1200px){
+    .cards-container{ gap: 2rem; }
+    .card{ width: clamp(200px, 17vw, 360px); }
+}
+
 /* Filtering by Level */
 
 .levels-container{
@@ -191,8 +246,8 @@ h2{
 .level-card{
     display: block;
     min-width: 280px;
-    width: 35vw;
-    max-width: 500px;
+    max-width: 35vw;
+    width: 500px;
     padding: 9rem 15rem;
     background-color: #D3CCFF;
     border: 0.75rem solid #070033;
@@ -232,9 +287,7 @@ h2{
 }
 
 .s-card{
-    min-width: 140px;
-    width: 20.5vw;
-    max-width: 200px;
+    max-width: 20.5vw;
     padding: 5rem 15rem;
     background-color: #ffca2a;
     border: 0.5rem solid #332600;
