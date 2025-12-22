@@ -68,11 +68,11 @@ h1{
 }
 
 .course-code{
-    width: 35vw;
+    width: 30vw;
 }
 
 .description{
-    width: 20vw;
+    width: 15vw;
 }
 
 .year-used{
@@ -103,6 +103,6 @@ p{ /* For error messages i.e sorry, no materials */
     margin: 0.5rem;
     padding: 3rem 8rem;
     color: #332600;
-    font-size: 5rem;
+    font-size: 4.5rem;
     font-weight: 400; 
 }
