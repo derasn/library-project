@@ -68,7 +68,7 @@ h1{
 }
 
 .course-code{
-    width: 40vw;
+    width: 35vw;
 }
 
 .description{
@@ -76,10 +76,6 @@ h1{
 }
 
 .year-used{
-    width: 10vw;
-}
-
-.view{
     width: 5vw;
 }
 
