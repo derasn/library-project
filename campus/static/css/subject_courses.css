@@ -145,7 +145,7 @@ h1{
 }
 
 .description{
-    width: 15vw;
+    width: 17vw;
 }
 
 p{ /* For error messages i.e sorry, no materials */
@@ -157,7 +157,7 @@ p{ /* For error messages i.e sorry, no materials */
 }
 
 .download{
-    margin-right: 5vw;
+    margin-right: 3vw;
 }
 
 a{ /* Download and view */
