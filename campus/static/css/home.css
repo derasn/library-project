@@ -80,7 +80,7 @@ button{
 /* Hero section */
 
 .main h1{
-    margin-top: 5rem;
+    margin-top: 10rem;
     font-size: 18rem;
     font-weight: bold;
     text-align: center;
@@ -141,8 +141,9 @@ p{ /* For error messages i.e sorry, no materials */
 }
 
 .card{
-    min-width: 17vw;
-    padding: 5rem 2rem;
+    min-width: 15vw;
+    width: 17vw;
+    padding: 5rem 3rem;
     background-color: #492aff;
     color: #D3CCFF;
     border-radius: 4rem;
@@ -189,8 +190,9 @@ h2{
 
 .level-card{
     display: block;
-    width: 35vw;
     min-width: 280px;
+    width: 35vw;
+    max-width: 500px;
     padding: 9rem 15rem;
     background-color: #D3CCFF;
     border: 0.75rem solid #070033;
@@ -200,13 +202,6 @@ h2{
     margin-bottom: 6rem;
     font-size: 6rem;
     font-weight: 500;
-}
-
-@media (max-width: 576px){
-    .level-card{
-        width: 80vw;
-        min-width: 0;
-    }
 }
 
 .level-card:hover{
@@ -237,8 +232,9 @@ h2{
 }
 
 .s-card{
-    width: 20.5vw;
     min-width: 140px;
+    width: 20.5vw;
+    max-width: 200px;
     padding: 5rem 15rem;
     background-color: #ffca2a;
     border: 0.5rem solid #332600;
@@ -249,13 +245,6 @@ h2{
     margin-bottom: 5rem;
     font-size: 5rem;
     font-weight: 400;
-}
-
-@media (max-width: 576px){
-    .s-card{
-        width: calc(50% - 10px);
-        min-width: 0;
-    }
 }
 
 .s-card:hover{

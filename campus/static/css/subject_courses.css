@@ -21,7 +21,7 @@ body{
 /* Header */
 
 .header{
-    margin-top: 5rem;
+    margin-top: 10rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -137,7 +137,7 @@ h1{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 0.5rem;
+    margin: 1rem;
     padding: 3rem 8rem;
     color: #332600;
     font-size: 4.5rem;

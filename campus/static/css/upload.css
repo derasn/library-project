@@ -20,7 +20,7 @@ body{
 /* Header */
 
 .header{
-    margin-top: 5rem;
+    margin-top: 10rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -76,7 +76,8 @@ h2{
     font-size: 4rem;
     color: red;
     text-align: center;
-    padding-bottom: 2rem;
+    margin-top: -5rem;
+    margin-bottom: 3rem;
 }
 
 .upload-form{
