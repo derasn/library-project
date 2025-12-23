@@ -234,7 +234,7 @@ hr:last-child{
     }
 
     .course-heading{
-        font-size: 4rem;
+        font-size: 3.5rem;
         font-weight: 500;
         display: flex;
         flex-direction: row;
@@ -242,7 +242,7 @@ hr:last-child{
     }
 
     .course-code{
-        width: 14vw;
+        width: 15vw;
         text-transform: uppercase;
     }
 
@@ -258,7 +258,7 @@ hr:last-child{
     }
 
     .year-used{
-        width: 8vw;
+        width: 5vw;
     }
 
     .read, .download{

@@ -185,8 +185,8 @@ h2{
 
 .level-cards{
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
 }
 
 .level-card{
@@ -307,14 +307,15 @@ a{
 
 @media (max-width: 768px) {
     .content{
-        margin: 4rem 5rem;
+        margin: 4rem 4rem;
     }
 
     .header{
         margin-top: 0;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        align-items: center;
+        gap: 2.5rem;
     }
 
     .header p{
@@ -364,18 +365,15 @@ a{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        margin-top: -10rem;
+        margin-top: 2rem;
     }
 
     input[type="search"]{
-        display: inline-block;
         padding: 3rem 5rem;
         font-size: 3rem;
         border-radius: 8rem;
-        width: 60vw;
-        max-width: 500%;
-        margin-bottom: 4rem;
-        margin-top: 10rem;
+        width: 60%;
+        margin: 0;
         max-height: 10rem;
     }
 
@@ -395,20 +393,22 @@ a{
         font-size: 4rem; 
     }
 
+    .cards-container{
+        display: flex;
+        gap: 4rem;
+    }
+
     .card{
-        width: 24rem;
+        min-width: 120px;
         padding: 3rem 3rem;
         border-radius: 2rem;
         text-align: center;
+        flex-shrink: 0;
     }
 
     .card h3{
         font-size: 4rem;
         text-align: center;
-    }
-
-    .cards-container{
-        gap: 4rem;
     }
 
     /* Filtering by Level */
@@ -417,13 +417,21 @@ a{
         margin-top: 8rem;
     }
 
+    .level-cards{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .level-card{
         display: block;
         width: 100%;
-        max-width: 400px;
+        max-width: 360px;
         padding: 6rem 12rem;
         margin: 1rem auto;
-        font-size: 4rem;
+        font-size: 3.5rem;
         text-align: center;
         border: 0.5rem solid #070033;
     }
@@ -432,7 +440,6 @@ a{
 
     .subjects-container{
         margin-top: 8rem;
-        display: flex;
 
     }
 
@@ -441,21 +448,19 @@ a{
     }
 
     .subjects-cards{
-        gap: 4rem;
+        gap: 2rem;
         display: flex;
-        flex-flow: row wrap;
+        flex-wrap: wrap;
         justify-content: space-between;
     }
 
     .s-card{
         padding: 4rem 6rem;
         border-radius: 2rem;
-        margin: 1rem auto;
+        margin: 0;
         font-size: 3rem;
         border: 0.25rem solid #332600;
-        width: 35vw;
-        max-width: 23rem;
-        min-width: 20rem;
+        width: calc(50% - 1rem);
         border-radius: 2rem;
     }
 
@@ -465,11 +470,9 @@ a{
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        width: auto;
     }
 
     .buttons{
-        width: auto;
         padding: 2rem 3rem;
         border-radius: 1rem;
         margin: 0.5rem;
@@ -478,11 +481,13 @@ a{
     }
 
     #button1-2{
+        width: 100%;
         gap: 2rem;
         margin: 0 auto;
     }
 
     .upload{
+        width: 100%;
         padding: 4rem 10rem;
         font-size: 3rem;
         border-radius: 2.5rem;
@@ -492,6 +497,7 @@ a{
     /* Register button */
 
     .register{
+        width: 100%;
         padding: 4rem 10rem;
         font-size: 3rem;
         border-radius: 2.5rem;
