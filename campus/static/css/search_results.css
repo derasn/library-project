@@ -109,3 +109,38 @@ p{ /* For error messages i.e sorry, no materials */
     font-size: 4.5rem;
     font-weight: 400; 
 }
+
+@media (max-width: 768px) {
+    html{
+        font-size: 3px;
+    }
+
+    .content{
+        margin: 10rem 5rem;
+    }
+
+    input[type="search"]{
+        width: 60vw;
+        font-size: 3rem;
+        padding: 2rem 4rem;
+    }
+
+    h1{
+        font-size: 7rem;
+        margin-top: 5rem;
+    }
+
+    .material-details{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2rem 4rem;
+        font-size: 3rem;
+    }
+
+    .course-code,
+    .description,
+    .year-used{
+        width: auto;
+        margin-bottom: 1rem;
+    }
+}
