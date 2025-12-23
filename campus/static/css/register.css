@@ -154,11 +154,11 @@ input::-webkit-input-placeholder{
     
     h2{
         font-size: 5rem;
-        margin: 10rem 0 8rem;
+        margin: 15rem 0 8rem;
     }
 
     .question{
-        gap: 5rem;
+        gap: 4rem;
         margin-bottom: 3rem;
     }
 
