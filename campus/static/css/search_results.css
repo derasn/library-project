@@ -24,7 +24,7 @@ input[type="search"]{
     color: #332600;
     padding: 2.5rem 5rem;
     font-size: 3.5rem;
-    border-radius: 2rem;
+    border-radius: 2.5rem;
     border: 0.25rem solid #332600;
     width: 35vw;
     margin-bottom: 10rem;
@@ -68,15 +68,18 @@ h1{
 }
 
 .course-code{
-    width: 30vw;
+    display: inline-block;
+    width: 5rem;
 }
 
 .description{
-    width: 15vw;
+    display: inline-block;
+    width: 4rem;
 }
 
 .year-used{
-    width: 5vw;
+    display: inline-block;
+    width: 2rem;
 }
 
 a{ /* Download and view */
@@ -89,10 +92,10 @@ a:hover{
 }
 
 hr{
+    display: block;
     border: 0.25rem solid #554000;
-    width: 89vw;
-    text-align: center;
-    margin: 5rem 0;
+    width: 90vw;
+    margin: 5rem auto;
 }
 
 hr:last-child{
