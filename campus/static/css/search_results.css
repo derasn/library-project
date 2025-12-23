@@ -69,17 +69,22 @@ h1{
 
 .course-code{
     display: inline-block;
-    width: 5rem;
+    width: 20rem;
 }
 
 .description{
     display: inline-block;
-    width: 4rem;
+    width: 12rem;
+}
+
+.view, .download{
+    display: inline-block;
+    width: 7rem;
 }
 
 .year-used{
     display: inline-block;
-    width: 2rem;
+    width: 5rem;
 }
 
 a{ /* Download and view */
@@ -111,36 +116,16 @@ p{ /* For error messages i.e sorry, no materials */
 }
 
 @media (max-width: 768px) {
-    html{
-        font-size: 3px;
+    .course-code{
+        display: inline-block;
+        width: 6rem;
     }
-
-    .content{
-        margin: 10rem 5rem;
+    .description{
+        display: inline-block;
+        width: 4.5rem;
     }
-
-    input[type="search"]{
-        width: 60vw;
-        font-size: 3rem;
-        padding: 2rem 4rem;
-    }
-
-    h1{
-        font-size: 7rem;
-        margin-top: 5rem;
-    }
-
-    .material-details{
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 2rem 4rem;
-        font-size: 3rem;
-    }
-
-    .course-code,
-    .description,
-    .year-used{
-        width: auto;
-        margin-bottom: 1rem;
+    .year-used, .view, .download{
+        display: inline-block;
+        width: 3rem;
     }
 }
