@@ -90,7 +90,7 @@ button{
     color: #332600;
     font-size: 7rem;
     font-weight: bold;
-    margin-top: -10.5rem;
+    margin-top: -11rem;
     margin-bottom: 0;
 }
 
@@ -103,7 +103,7 @@ input[type="search"]{
     border: 0.25rem solid #332600;
     width: 40vw;
     margin-bottom: 4rem;
-    margin-top: -16rem;
+    margin-top: -18rem;
 }
 
 #search{
@@ -330,10 +330,11 @@ a{
         font-size: 3rem;
     }
 
-    .auth-buttons{
-        display: flex;
-        flex-direction: row;
-        gap: 2rem;
+    a button{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
     }
 
     #register:hover, #upload:hover{
@@ -341,10 +342,11 @@ a{
     }
 
     button{
-        padding: 2rem 8rem;
+        width: auto;
+        padding: 1.5rem 3rem;
         font-size: 2.5rem;
         border-radius: 1rem;
-        margin: 0 1rem;
+        margin: 0.5rem;
         border-width: 0.25rem;
     }
     
