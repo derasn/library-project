@@ -258,11 +258,11 @@ hr:last-child{
     }
 
     .year-used{
-        width: 5vw;
+        width: 1vw;
     }
 
     .read, .download{
-        width: 5vw;
+        width: 3vw;
     }
 
     p{ /* For error messages i.e sorry, no materials */

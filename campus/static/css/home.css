@@ -140,7 +140,7 @@ p{ /* For error messages i.e sorry, no materials */
 }
 
 .card{
-    width: 0 0 17vw;
+    width: 17vw;
     text-align: center;
     padding: 5rem 3rem;
     background-color: #492aff;
@@ -327,13 +327,8 @@ a{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-    }
-
-    a button{
-        display: inline-flex;
         align-items: center;
-        justify-content: center;
-        width: auto;
+        gap: 1rem;
     }
 
     #register:hover, #upload:hover{
@@ -347,6 +342,7 @@ a{
         border-radius: 1rem;
         margin: 0.5rem;
         border-width: 0.25rem;
+        white-space: nowrap;
     }
     
     .main h1{
@@ -357,7 +353,7 @@ a{
 
     #small-text{
         font-size: 3rem;
-        margin-top: -8rem;
+        margin-top: -10rem;
     }
 
     .search-container{
@@ -365,14 +361,14 @@ a{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        margin-top: 2rem;
+        margin-top: -2rem;
     }
 
     input[type="search"]{
         padding: 3rem 5rem;
         font-size: 3rem;
         border-radius: 8rem;
-        width: 60%;
+        width: 65%;
         margin: 0;
         max-height: 10rem;
     }
@@ -423,6 +419,7 @@ a{
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
 
     .level-card{
@@ -440,7 +437,6 @@ a{
 
     .subjects-container{
         margin-top: 8rem;
-
     }
 
     .subjects-container h2{
@@ -450,8 +446,10 @@ a{
     .subjects-cards{
         gap: 2rem;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
     }
 
     .s-card{
@@ -460,17 +458,12 @@ a{
         margin: 0;
         font-size: 3rem;
         border: 0.25rem solid #332600;
-        width: calc(50% - 1rem);
+        width: 100%;
         border-radius: 2rem;
     }
 
     /* Upload button */
 
-    a .buttons{
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-    }
 
     .buttons{
         padding: 2rem 3rem;
