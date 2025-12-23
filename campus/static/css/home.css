@@ -327,7 +327,6 @@ a{
 
     a button{
         display: inline-flex;
-        flex-direction: row;
         align-items: center;
         justify-content: center;
         width: auto;
@@ -338,7 +337,6 @@ a{
     }
 
     button{
-        width: auto;
         padding: 2rem 3rem;
         font-size: 2.5rem;
         border-radius: 1rem;
@@ -441,8 +439,8 @@ a{
         font-size: 3rem;
         border: 0.25rem solid #332600;
         width: 80vw;
-        max-width: 30rem;
-        min-width: 24rem;
+        max-width: 25rem;
+        min-width: 22rem;
         border-radius: 1rem;
     }
 
@@ -456,7 +454,6 @@ a{
     }
 
     .buttons{
-        width: auto;
         padding: 2rem 4rem;
         border-radius: 1rem;
         margin: 0.5rem;
