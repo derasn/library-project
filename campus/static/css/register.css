@@ -129,3 +129,63 @@ input::-webkit-input-placeholder{
     border: 0.5rem solid #332600;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
+@media (max-width: 768px) {
+    .content{
+        margin: 4px 5px;
+    }
+
+    .header{
+        margin-top: 5rem;
+    }
+
+    .header p{
+        font-size: 4rem;
+    }
+
+    .main{
+        margin: 5rem 0;
+    }
+
+    .previous-page{
+        font-size: 3rem;
+        margin: 1rem 0;
+    }
+    
+    h2{
+        font-size: 5rem;
+        margin-top: 5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .question{
+        gap: 5rem;
+        margin-bottom: 3rem;
+    }
+
+    label{
+        font-size: 3rem;
+    }
+    
+    input, select{
+        width: 60vw;
+        padding: 1.5rem 3rem;
+        font-size: 3rem;
+        border-radius: 1.5rem;
+    }
+
+    p{ /* For error messages i.e sorry, no materials */
+        font-size: 4rem; 
+    }
+
+    /* Register Button */
+
+    #register-btn{
+        font-size: 3rem;
+        padding: 3rem 6rem;
+    }
+
+    #register-btn:hover{
+        border: 0.25rem solid #332600;
+    }
+}
