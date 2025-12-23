@@ -185,8 +185,8 @@ h2{
 
 .level-cards{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 
 .level-card{
