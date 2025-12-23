@@ -108,10 +108,21 @@ p{ /* For error messages i.e sorry, no materials */
 }
 
 @media (max-width: 768px) {
-    .course-code { flex: 2; min-width: 0; }
-    .description { flex: 3; min-width: 0; }
-    .year-used { flex: 1; min-width: 0; }
+    .course-code{
+        display: inline-block;
+        width: 12rem;
+    }
+    .description{
+        display: inline-block;
+        width: 8rem;
+    }
+    .year-used{
+        display: inline-block;
+        width: 3rem;
+    }
 
-    .read,
-    .download { flex: 1.5; }
+    .view, .download{
+        display: inline-block;
+        width: 6rem;
+    }
 }
