@@ -79,7 +79,7 @@ h1{
     width: 5vw;
 }
 
-a{ /* Download and view */
+a{ /* Download and read */
     color: #2400FF;
     text-decoration: none;
 }
@@ -112,6 +112,6 @@ p{ /* For error messages i.e sorry, no materials */
     .description { flex: 3; min-width: 0; }
     .year-used { flex: 1; min-width: 0; }
 
-    .view,
-    .download { flex: 1; }
+    .read,
+    .download { flex: 1.5; }
 }
