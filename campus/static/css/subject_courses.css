@@ -190,16 +190,12 @@ hr:last-child{
         margin: 1rem 0;
     }
 
-    input[type="search"]{
-        width: 80vw;
-        margin-bottom: 5rem;
-        border-radius: 5rem;
-    }
-
     .header{
+        display: flex;
+        justify-content: space-between;
         flex-direction: row;
         gap: 3rem;
-        margin-top: 5rem;
+        margin-top: 0;
     }
 
     .header p{
@@ -207,9 +203,12 @@ hr:last-child{
     }
 
     .auth-buttons{
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
         gap: 2rem;
     }
+
     #register:hover, #upload:hover{
         border-width: 0.25rem;
     }
@@ -219,119 +218,56 @@ hr:last-child{
         font-size: 2.5rem;
         border-radius: 1rem;
         margin: 0 1rem;
+        border-width: 0.25rem;
     }
     
-    .main h1{
+    .others h1{
         font-size: 6rem;
-        margin-top: 5rem;
+        margin-top: 8rem;
         margin-bottom: 1.5rem;
     }
 
-    #small-text{
-        font-size: 3rem;
-        margin-top: -8rem;
-    }
-
-    .search-container{
+    .courses{
         display: flex;
         flex-direction: column;
+        justify-self: flex-start;
     }
 
-    input[type="search"]{
-        padding: 3rem 5rem;
+    .course-heading{
+        font-size: 4rem;
+        font-weight: 500;
+        display: flex;
+        flex-direction: row;
+        padding: 0 3rem;
+    }
+
+    .course-code{
+        width: 10vw;
+        text-transform: uppercase;
+    }
+
+    .material-details{
+        margin: 1rem;
+        padding: 1.5rem 4rem;
         font-size: 3rem;
-        border-radius: 8rem;
-        width: 70vw;
-        margin-bottom: 4rem;
-        margin-top: -20rem;
+        font-weight: 400;
     }
 
-    #search{
-        padding: 12px 15px;
-        font-size: 2.5rem;
-        margin-left: -1rem;
-        border-radius: 8rem;
-    }
-
-    /* Featured Courses */
-    h2{
-        font-size: 5rem;
+    .description{
+        width: 15vw;
     }
 
     p{ /* For error messages i.e sorry, no materials */
-        font-size: 4rem; 
+        margin: 0.5rem;
+        padding: 1.5rem 4rem;
+        font-size: 3rem;
+        font-weight: 400; 
     }
 
-    .card{
-        width: 35vw;
-        border-radius: 3rem;
-    }
-
-    .card h3{
-        font-size: 4rem;
-    }
-
-    .cards-container{
-        gap: 4rem;
-    }
-
-    /* Filtering by Level */
-
-    .levels-container{
-        margin-top: 8rem;
-    }
-
-    .level-card{
-        width: 80vw;
-        padding: 6rem 12rem;
-        margin-bottom: 4rem;
-        font-size: 4rem;
-        border: 0.5rem solid #070033;
-    }
-
-    /* Subjects */
-
-    .subjects-container{
-        margin-top: 8rem;
-    }
-
-    .subjects-container h2{
-        font-size: 5rem;
-    }
-
-    .s-card{
-        width: calc(50% - 4rem);
-        padding: 3rem 8rem;
-        border-radius: 2rem;
-        margin-bottom: 4rem;
-        font-size: 4rem;
-        border: 0.25rem solid #332600;
-    }
-
-    /* Upload button */
-
-    .buttons{
-        margin: 8rem auto;
-    }
-
-    #button1-2{
-        gap: 2rem;
-        margin: 0 auto;
-    }
-
-    .upload{
-        padding: 4rem 8rem;
-        font-size: 3.5rem;
-        border-radius: 2.5rem;
-        width: fit-content;
-    }
-
-    /* Register button */
-
-    .register{
-        padding: 4rem 8rem;
-        font-size: 3.5rem;
-        border-radius: 2.5rem;
-        width: fit-content;
+    hr{
+        border: 0.25rem solid #554000;
+        width: 85vw;
+        text-align: center;
+        margin: 5rem 0;
     }
 }
