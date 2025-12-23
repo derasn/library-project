@@ -132,11 +132,11 @@ input::-webkit-input-placeholder{
 
 @media (max-width: 768px) {
     .content{
-        margin: 4px 5px;
+        margin: 4rem 5rem;
     }
 
     .header{
-        margin-top: 5rem;
+        margin-top: 3rem;
     }
 
     .header p{
@@ -155,7 +155,7 @@ input::-webkit-input-placeholder{
     h2{
         font-size: 5rem;
         margin-top: 5rem;
-        margin-bottom: 1.5rem;
+        margin: 3rem 0 6rem 0;
     }
 
     .question{
@@ -168,7 +168,7 @@ input::-webkit-input-placeholder{
     }
     
     input, select{
-        width: 60vw;
+        width: 50vw;
         padding: 1.5rem 3rem;
         font-size: 3rem;
         border-radius: 1.5rem;

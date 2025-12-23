@@ -14,7 +14,6 @@ body{
 
 .content{
     margin: 0 17rem;
-    max-width: 100%;
 }
 
 
@@ -305,7 +304,7 @@ a{
     text-decoration: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .content{
         margin: 4rem 5rem;
     }
@@ -332,9 +331,11 @@ a{
     }
 
     .auth-buttons{
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
         gap: 2rem;
     }
+
     #register:hover, #upload:hover{
         border-width: 0.25rem;
     }
@@ -359,7 +360,7 @@ a{
 
     .search-container{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
 
     input[type="search"]{
@@ -429,7 +430,7 @@ a{
         padding: 3rem 8rem;
         border-radius: 2rem;
         margin-bottom: 4rem;
-        font-size: 4rem;
+        font-size: 3rem;
         border: 0.25rem solid #332600;
     }
 
@@ -448,7 +449,6 @@ a{
         padding: 4rem 8rem;
         font-size: 3.5rem;
         border-radius: 2.5rem;
-        width: fit-content;
     }
 
     /* Register button */
@@ -457,6 +457,5 @@ a{
         padding: 4rem 8rem;
         font-size: 3.5rem;
         border-radius: 2.5rem;
-        width: fit-content;
     }
 }

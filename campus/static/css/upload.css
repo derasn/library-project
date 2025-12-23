@@ -150,11 +150,11 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
 
 @media (max-width: 768px) {
     .content{
-        margin: 4px 5px;
+        margin: 4rem 5rem;
     }
 
     .header{
-        margin-top: 5rem;
+        margin-top: 3rem;
     }
 
     .header p{
@@ -173,7 +173,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
     h2{
         font-size: 5rem;
         margin-top: 5rem;
-        margin-bottom: 1.5rem;
+        margin: 3rem 0 5rem;
     }
 
     .question{
@@ -185,8 +185,8 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
         font-size: 3rem;
     }
     
-    input, select{
-        width: 60vw;
+    input, select, textarea{
+        width: 50vw;
         padding: 1.5rem 3rem;
         font-size: 3rem;
         border-radius: 1.5rem;
@@ -199,7 +199,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
     }
 
     input::-webkit-file-upload-button{
-        font-size: 2rem;
+        font-size: 2.5rem;
         border: 0.25rem solid #332600;
         padding: 1.5rem 2rem;
         margin-right: 2rem;
