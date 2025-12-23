@@ -223,8 +223,8 @@ hr:last-child{
     
     .others h1{
         font-size: 6rem;
-        margin-top: 8rem;
-        margin-bottom: 1.5rem;
+        margin-top: 6rem;
+        margin-bottom: 4rem;
     }
 
     .courses{
@@ -242,19 +242,27 @@ hr:last-child{
     }
 
     .course-code{
-        width: 10vw;
+        width: 14vw;
         text-transform: uppercase;
     }
 
     .material-details{
-        margin: 1rem;
-        padding: 1.5rem 4rem;
+        margin-top: 1rem;
+        padding: 1rem 2rem;
         font-size: 3rem;
         font-weight: 400;
     }
 
     .description{
         width: 15vw;
+    }
+
+    .year-used{
+        width: 8vw;
+    }
+
+    .read, .download{
+        width: 5vw;
     }
 
     p{ /* For error messages i.e sorry, no materials */
@@ -268,6 +276,6 @@ hr:last-child{
         border: 0.25rem solid #554000;
         width: 85vw;
         text-align: center;
-        margin: 5rem 0;
+        margin: 4rem 0;
     }
 }
