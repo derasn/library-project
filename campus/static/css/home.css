@@ -311,11 +311,12 @@ a{
     }
 
     .header{
-        margin-top: 0;
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 2.5rem;
+        justify-content: space-between;
+        gap: 1rem;
+        margin: 0;
     }
 
     .header p{
@@ -353,7 +354,7 @@ a{
 
     #small-text{
         font-size: 3rem;
-        margin-top: -10rem;
+        margin-top: -12rem;
     }
 
     .search-container{
@@ -361,7 +362,7 @@ a{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        margin-top: -2rem;
+        margin: 3rem;
     }
 
     input[type="search"]{
@@ -414,7 +415,6 @@ a{
     }
 
     .level-cards{
-        width: 90%;
         margin: auto;
         display: flex;
         flex-direction: column;
@@ -449,7 +449,6 @@ a{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 90%;
     }
 
     .s-card{
@@ -466,10 +465,7 @@ a{
 
 
     .buttons{
-        padding: 2rem 3rem;
-        border-radius: 1rem;
         margin: 0.5rem;
-        border-width: 0.25rem;
         margin: 5rem auto;
     }
 
@@ -481,9 +477,9 @@ a{
 
     .upload{
         width: 100%;
-        padding: 4rem 10rem;
+        padding: 2rem 3rem;
         font-size: 3rem;
-        border-radius: 2.5rem;
+        border-radius: 2rem;
         border-width: 0.25rem;
     }
 
@@ -491,9 +487,9 @@ a{
 
     .register{
         width: 100%;
-        padding: 4rem 10rem;
+        padding: 2rem 3rem;
         font-size: 3rem;
-        border-radius: 2.5rem;
+        border-radius: 2rem;
         border-width: 0.25rem;
     }
 
