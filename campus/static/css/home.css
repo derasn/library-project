@@ -305,8 +305,12 @@ a{
 }
 
 @media (max-width: 768px) {
+    *{
+        box-sizing: border-box;
+    }
+
     .content{
-        margin: 4rem 0;
+        margin: 4rem 2rem;
     }
 
     .header{
@@ -327,7 +331,7 @@ a{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        gap: 1.5rem;
+        gap: 1rem;
     }
 
     #register:hover, #upload:hover{
@@ -335,7 +339,7 @@ a{
     }
 
     button{
-        padding: 2rem 3rem;
+        padding: 1.5rem 2rem;
         font-size: 2.5rem;
         border-radius: 1rem;
         margin: 0 1rem;
@@ -345,12 +349,11 @@ a{
     .main h1{
         font-size: 6.5rem;
         margin-top: 8rem;
-        margin-bottom: 1.5rem;
     }
 
     #small-text{
         font-size: 3rem;
-        margin-top: -11rem;
+        margin-top: -10.5rem;
     }
 
     .search-container{
@@ -358,7 +361,7 @@ a{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        margin: 2rem;
+        margin-top: 2rem;
     }
 
     input[type="search"]{
@@ -368,6 +371,7 @@ a{
         width: 70%;
         margin: 0;
         max-height: 10rem;
+        border-color: #492aff;
     }
 
     #search{
@@ -380,6 +384,7 @@ a{
     /* Featured Courses */
     h2{
         font-size: 5rem;
+        margin-top: 8rem;
     }
 
     p{ /* For error messages i.e sorry, no materials */
@@ -388,7 +393,7 @@ a{
 
     .cards-container{
         display: flex;
-        gap: 4rem;
+        gap: 2rem;
     }
 
     .card{
@@ -408,14 +413,17 @@ a{
 
     .levels-container{
         margin-top: 8rem;
+        width: 100%;
+        padding: 0;
     }
 
     .level-cards{
         margin: auto;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: stretch;
         justify-content: center;
+        width: 100%;
     }
 
     .level-card{
@@ -433,6 +441,7 @@ a{
 
     .subjects-container{
         margin-top: 8rem;
+        width: 100%;
     }
 
     .subjects-container h2{
@@ -440,11 +449,12 @@ a{
     }
 
     .subjects-cards{
-        gap: 2rem;
+        gap: 1rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: stretch;
+        width: 100%;
     }
 
     .s-card{
@@ -462,7 +472,7 @@ a{
 
 
     .buttons{
-        margin: 0.5rem;
+        margin-top: 5rem;
     }
 
     #button1-2{
@@ -471,8 +481,7 @@ a{
     }
 
     .upload{
-        width: 100%;
-        padding: 2rem 4rem;
+        padding: 3rem 4rem;
         font-size: 3rem;
         border-radius: 1rem;
         border-width: 0.25rem;
@@ -481,8 +490,7 @@ a{
     /* Register button */
 
     .register{
-        width: 100%;
-        padding: 2rem 4rem;
+        padding: 3rem 4rem;
         font-size: 3rem;
         border-radius: 1rem;
         border-width: 0.25rem;

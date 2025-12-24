@@ -214,7 +214,7 @@ hr:last-child{
     }
 
     button{
-        padding: 2rem 3rem;
+        padding: 2rem 2rem;
         font-size: 2.5rem;
         border-radius: 1rem;
         margin: 0 1rem;
@@ -239,7 +239,7 @@ hr:last-child{
         font-weight: 500;
         display: flex;
         flex-direction: row;
-        margin: 0 3rem;
+        margin: 0 2rem;
     }
 
     .course-code{
@@ -260,11 +260,11 @@ hr:last-child{
     }
 
     .year-used{
-        width: 1rem;
+        width: 2px;
     }
 
     .read, .download{
-        width: 1rem;
+        width: 2px;
     }
 
     p{ /* For error messages i.e sorry, no materials */
