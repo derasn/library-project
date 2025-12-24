@@ -357,7 +357,7 @@ a{
 
     #small-text{
         font-size: 3rem;
-        margin-top: -10.5rem;
+        margin-top: -11rem;
         font-weight: 500;
     }
 
@@ -366,7 +366,7 @@ a{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        margin-top: 2rem;
+        margin-top: 2.5rem;
     }
 
     input[type="search"]{
@@ -399,7 +399,7 @@ a{
 
     .cards-container{
         display: flex;
-        gap: 2rem;
+        gap: 3rem;
     }
 
     .card{
@@ -439,7 +439,7 @@ a{
         width: 100%;
         max-width: none;
         padding: 6rem 4rem;
-        margin: 1rem 0;
+        margin: 0.5rem 0;
         font-size: 3.5rem;
         text-align: center;
         border: 0.5rem solid #070033;
@@ -473,7 +473,7 @@ a{
         border-radius: 2rem;
         margin: 1rem 0;
         font-size: 3rem;
-        font-weight: 400;
+        font-weight: 500;
         border: 0.25rem solid #332600;
         border-radius: 2rem;
     }
@@ -482,8 +482,7 @@ a{
 
 
     .buttons{
-        margin-top: 7rem;
-        margin-bottom: 5rem;
+        margin: 8rem 0;
     }
 
     #button1-2{
