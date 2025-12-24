@@ -357,7 +357,7 @@ a{
 
     #small-text{
         font-size: 3rem;
-        margin-top: -11rem;
+        margin-top: -12rem;
         font-weight: 500;
     }
 
@@ -366,7 +366,7 @@ a{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        margin-top: 2.5rem;
+        margin-top: 3rem;
     }
 
     input[type="search"]{
