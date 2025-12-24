@@ -255,23 +255,25 @@ hr:last-child{
     }
 
     .course-code{
-        width: 30%;
+        width: 27%;
         text-transform: uppercase;
     }
 
     .material-details{
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-flow: row nowrap;
+        justify-self: start;
         justify-content: space-between;
         width: 100%;
         font-size: 3rem;
         font-weight: 400;
-        margin: 1rem 0.25rem;
+        margin: 1rem 0;
     }
 
     .description{
-        width: auto;
+        width: 20%;
+        padding: 0;
+        margin: 0;
     }
 
     .year-used{
