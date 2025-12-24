@@ -90,7 +90,7 @@ button{
     color: #332600;
     font-size: 7rem;
     font-weight: bold;
-    margin-top: -11rem;
+    margin-top: -12rem;
     margin-bottom: 0;
 }
 
@@ -310,7 +310,7 @@ a{
     }
 
     .content{
-        margin: 4rem 2rem;
+        margin: 4rem 0;
     }
 
     .header{
@@ -319,7 +319,7 @@ a{
         align-items: center;
         justify-content: space-between;
         gap: 3rem;
-        margin: 0;
+        margin: 0 1rem;
     }
 
     .header p{
@@ -331,7 +331,7 @@ a{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        gap: 1rem;
+        gap: 1.5rem;
     }
 
     #register:hover, #upload:hover{
@@ -339,13 +339,17 @@ a{
     }
 
     button{
-        padding: 1.5rem 2rem;
+        padding: 2rem 3rem;
         font-size: 2.5rem;
         border-radius: 1rem;
         margin: 0 1rem;
         border-width: 0.25rem;
     }
-    
+
+    .main{
+        margin: 4rem 2rem;
+    }
+
     .main h1{
         font-size: 6.5rem;
         margin-top: 8rem;
@@ -371,7 +375,7 @@ a{
         width: 70%;
         margin: 0;
         max-height: 10rem;
-        border-color: #492aff;
+        border-color: #3c310e;
     }
 
     #search{
@@ -385,6 +389,7 @@ a{
     h2{
         font-size: 5rem;
         margin-top: 8rem;
+        margin-bottom: 1rem;
     }
 
     p{ /* For error messages i.e sorry, no materials */
@@ -418,7 +423,7 @@ a{
     }
 
     .level-cards{
-        margin: auto;
+        margin: 1rem auto;
         display: flex;
         flex-direction: column;
         align-items: stretch;
@@ -446,6 +451,7 @@ a{
 
     .subjects-container h2{
         font-size: 5rem;
+        margin-bottom: 1rem;
     }
 
     .subjects-cards{
@@ -464,6 +470,7 @@ a{
         border-radius: 2rem;
         margin: 1rem 0;
         font-size: 3rem;
+        font-weight: 400;
         border: 0.25rem solid #332600;
         border-radius: 2rem;
     }
@@ -472,7 +479,7 @@ a{
 
 
     .buttons{
-        margin-top: 5rem;
+        margin-top: 8rem;
     }
 
     #button1-2{
@@ -483,7 +490,7 @@ a{
     .upload{
         padding: 3rem 4rem;
         font-size: 3rem;
-        border-radius: 1rem;
+        border-radius: 1.5rem;
         border-width: 0.25rem;
     }
 
@@ -492,7 +499,7 @@ a{
     .register{
         padding: 3rem 4rem;
         font-size: 3rem;
-        border-radius: 1rem;
+        border-radius: 1.5rem;
         border-width: 0.25rem;
     }
 

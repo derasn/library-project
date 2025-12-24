@@ -181,32 +181,33 @@ hr:last-child{
 }
 
 @media (max-width: 600px) {
-    .content{
-        margin: 4rem 0;
+    *{
+        box-sizing: border-box;
     }
 
-    .previous-page{
-        font-size: 3rem;
-        margin: 1rem 4rem;
+    .content{
+        margin: 4rem 2rem;
     }
 
     .header{
         display: flex;
-        justify-content: space-between;
         flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
         gap: 3rem;
-        margin: 0 1rem;
+        margin: 0;
     }
 
     .header p{
         font-size: 3rem;
+        margin-left: 0;
     }
 
     .auth-buttons{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        gap: 1.5rem;
+        gap: 1rem;
     }
 
     #register:hover, #upload:hover{
@@ -214,18 +215,22 @@ hr:last-child{
     }
 
     button{
-        padding: 2rem 2rem;
+        padding: 1.5rem 2rem;
         font-size: 2.5rem;
         border-radius: 1rem;
         margin: 0 1rem;
         border-width: 0.25rem;
+    }
+
+    .previous-page{
+        font-size: 3rem;
+        margin: 1rem 1rem;
     }
     
     .others h1{
         font-size: 6rem;
         margin-top: 6rem;
         margin-bottom: 4rem;
-        margin-left: 4rem;
     }
 
     .courses{
@@ -248,6 +253,7 @@ hr:last-child{
     }
 
     .material-details{
+        width: 100%;
         margin-top: 1rem;
         padding: 1rem 1rem;
         font-size: 3rem;
@@ -256,28 +262,27 @@ hr:last-child{
     }
 
     .description{
-        width: 15vw;
+        width: 15%;
     }
 
     .year-used{
-        width: 2px;
+        width: 2%;
     }
 
     .read, .download{
-        width: 2px;
+        width: 2%;
     }
 
     p{ /* For error messages i.e sorry, no materials */
-        margin: 0.5rem 2rem;
-        padding: 1.5rem 1rem;
+        margin: 0 2rem;
+        padding: 1rem 0;
         font-size: 3rem;
         font-weight: 400; 
     }
 
     hr{
-        border: 0.25rem solid #554000;
-        width: 85vw;
-        text-align: center;
-        margin: 4rem 0;
+        border: 0.125rem solid #554000;
+        width: 100%;
+        margin: 2rem 0;
     }
 }
