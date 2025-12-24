@@ -271,21 +271,25 @@ hr:last-child{
 
     .material-details{
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: row;
         justify-content: space-between;
-        gap: 1rem;
         width: 100%;
         font-size: 3rem;
         font-weight: 400;
-        margin: 1rem 0;
+        margin: 0.5rem 1rem;
+        padding: 0;
     }
 
     .description{
         width: 20%;
     }
 
+    .year-used{
+        width: 5%;
+    }
+
     p{ /* For error messages i.e sorry, no materials */
-        margin: 0 0.25rem;
+        margin: 0;
         font-size: 3rem;
         font-weight: 400; 
     }
@@ -293,6 +297,6 @@ hr:last-child{
     hr{
         border: 0.125rem solid #554000;
         width: 100%;
-        margin: 3rem 0;
+        margin: 2rem 1rem;
     }
 }
