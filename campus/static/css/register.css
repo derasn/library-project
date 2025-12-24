@@ -145,6 +145,7 @@ input::-webkit-input-placeholder{
 
     .header p{
         font-size: 3rem;
+        margin-left: 1rem;
     }
 
     .main{
