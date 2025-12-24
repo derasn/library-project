@@ -277,7 +277,7 @@ hr:last-child{
         font-size: 3rem;
         font-weight: 400;
         margin: 1rem 0;
-        padding: 0 2rem;
+        padding: 0 3rem;
     }
 
     .description{
@@ -292,12 +292,12 @@ hr:last-child{
         margin: 0.5rem 0;
         font-size: 3rem;
         font-weight: 400;
-        padding: 0 2rem;
+        padding: 0 3rem;
     }
 
     hr{
         border: 0.125rem solid #554000;
         width: 95%;
-        margin: 2.5rem 2rem;
+        margin: 3rem 2rem;
     }
 }
