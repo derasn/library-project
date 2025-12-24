@@ -186,7 +186,7 @@ hr:last-child{
     }
 
     .content{
-        margin: 4rem 2rem;
+        margin: 4rem 0;
     }
 
     .header{
@@ -224,7 +224,12 @@ hr:last-child{
 
     .previous-page{
         font-size: 3rem;
-        margin: 1rem 1rem;
+        margin: 1rem 3rem;
+    }
+
+    .others{
+        margin: 4rem 2rem;
+        width: 100%;
     }
     
     .others h1{
@@ -237,6 +242,7 @@ hr:last-child{
         display: flex;
         flex-direction: column;
         justify-self: flex-start;
+        width: 100%;
     }
 
     .course-heading{
@@ -244,21 +250,21 @@ hr:last-child{
         font-weight: 500;
         display: flex;
         flex-direction: row;
-        margin: 0 2rem;
+        margin-left: 0;
     }
 
     .course-code{
-        width: 15vw;
+        width: 15%;
         text-transform: uppercase;
     }
 
     .material-details{
         width: 100%;
         margin-top: 1rem;
-        padding: 1rem 1rem;
+        padding: 1rem 0;
         font-size: 3rem;
         font-weight: 400;
-        margin-left: 2rem;
+        margin: 0 1rem;
     }
 
     .description{
@@ -266,15 +272,15 @@ hr:last-child{
     }
 
     .year-used{
-        width: 2%;
+        width: 0.5%;
     }
 
     .read, .download{
-        width: 2%;
+        width: 1%;
     }
 
     p{ /* For error messages i.e sorry, no materials */
-        margin: 0 2rem;
+        margin: 0 1rem;
         padding: 1rem 0;
         font-size: 3rem;
         font-weight: 400; 

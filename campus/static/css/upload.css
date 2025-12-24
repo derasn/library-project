@@ -134,7 +134,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
 #upload-btn{
     background-color: #FFBF00;
     color: #332600;
-    border: none;
+    border: 0.25rem solid #332600;
     font-size: 4rem;
     font-weight: 500;
     margin-top: 5rem;
@@ -149,16 +149,20 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
 }
 
 @media (max-width: 768px) {
+    *{
+        box-sizing: border-box;
+    }
+
     .content{
-        margin: 4rem 5rem;
+        margin: 4rem 0;
     }
 
     .header{
-        margin-top: 3rem;
+        margin: 0;
     }
 
     .header p{
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     .main{
@@ -167,7 +171,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
 
     .previous-page{
         font-size: 3rem;
-        margin: 1rem 0;
+        margin: 1rem 3rem;
     }
     
     h2{
@@ -211,6 +215,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
     #upload-btn{
         font-size: 3rem;
         padding: 3rem 6rem;
+        border: 0.125rem solid #332600;;
     }
 
     #upload-btn:hover{

@@ -319,7 +319,7 @@ a{
         align-items: center;
         justify-content: space-between;
         gap: 3rem;
-        margin: 0 1rem;
+        margin: 0;
     }
 
     .header p{
@@ -331,7 +331,7 @@ a{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        gap: 1.5rem;
+        gap: 1rem;
     }
 
     #register:hover, #upload:hover{
@@ -339,7 +339,7 @@ a{
     }
 
     button{
-        padding: 2rem 3rem;
+        padding: 1.5rem 2rem;
         font-size: 2.5rem;
         border-radius: 1rem;
         margin: 0 1rem;
