@@ -195,7 +195,7 @@ hr:last-child{
         align-items: center;
         justify-content: space-between;
         gap: 3rem;
-        margin: 0;
+        margin: 0 0.5rem;
     }
 
     .header p{
@@ -207,7 +207,7 @@ hr:last-child{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        gap: 1rem;
+        gap: 0.5rem;
     }
 
     #register:hover, #upload:hover{
@@ -224,7 +224,7 @@ hr:last-child{
 
     .previous-page{
         font-size: 3rem;
-        margin: 1rem 3rem;
+        margin: 3rem 3rem;
     }
 
     .others{
@@ -234,8 +234,8 @@ hr:last-child{
     
     .others h1{
         font-size: 6rem;
-        margin-top: 6rem;
-        margin-bottom: 4rem;
+        margin-top: 8rem;
+        margin-bottom: 2rem;
     }
 
     .courses{
@@ -243,6 +243,7 @@ hr:last-child{
         flex-direction: column;
         justify-self: flex-start;
         width: 100%;
+        padding: 0;
     }
 
     .course-heading{
@@ -250,7 +251,8 @@ hr:last-child{
         font-weight: 500;
         display: flex;
         flex-direction: row;
-        margin-left: 0;
+        margin: 0;
+        padding: 0;
     }
 
     .course-code{
@@ -260,11 +262,9 @@ hr:last-child{
 
     .material-details{
         width: 100%;
-        margin-top: 1rem;
-        padding: 1rem 0;
         font-size: 3rem;
         font-weight: 400;
-        margin: 0 1rem;
+        margin: 0.5rem 1rem;
     }
 
     .description{
@@ -280,8 +280,7 @@ hr:last-child{
     }
 
     p{ /* For error messages i.e sorry, no materials */
-        margin: 0 1rem;
-        padding: 1rem 0;
+        margin: 0 2rem;
         font-size: 3rem;
         font-weight: 400; 
     }
