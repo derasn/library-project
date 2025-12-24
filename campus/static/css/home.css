@@ -344,6 +344,7 @@ a{
         border-radius: 1rem;
         margin: 0 1rem;
         border-width: 0.25rem;
+        white-space: nowrap;
     }
 
     .main{
@@ -366,7 +367,7 @@ a{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        margin-top: 1rem;
+        margin-top: 0;
     }
 
     input[type="search"]{
@@ -439,7 +440,7 @@ a{
         width: 100%;
         max-width: none;
         padding: 6rem 4rem;
-        margin: 0.5rem 0;
+        margin: 1rem 0;
         font-size: 3.5rem;
         text-align: center;
         border: 0.5rem solid #070033;
@@ -470,7 +471,7 @@ a{
         width: 100%;
         padding: 4rem 4rem;
         border-radius: 2rem;
-        margin: 1rem 0;
+        margin: 0.5rem 0;
         font-size: 3rem;
         font-weight: 500;
         border: 0.25rem solid #332600;
@@ -481,7 +482,7 @@ a{
 
 
     .buttons{
-        margin: 8rem 0;
+        margin: 5rem 0;
     }
 
     #button1-2{

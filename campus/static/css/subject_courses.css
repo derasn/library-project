@@ -230,12 +230,12 @@ hr:last-child{
 
     .previous-page{
         font-size: 3rem;
-        margin: 1rem 3rem;
+        margin: 3rem 3rem;
     }
     
     .others h1{
         font-size: 6rem;
-        margin-top: 8rem;
+        margin-top: 6rem;
         margin-bottom: 3rem;
     }
 
@@ -286,12 +286,12 @@ hr:last-child{
         width: 25%;
     }
 
-    span{
+    #used{
         display: none;
     }
 
     p{ /* For error messages i.e sorry, no materials */
-        margin: 0.5rem 0;
+        margin: 1rem 0;
         font-size: 3rem;
         font-weight: 400;
         padding: 0 3rem;
@@ -300,6 +300,6 @@ hr:last-child{
     hr{
         border: 0.125rem solid #554000;
         width: 95%;
-        margin: 3rem 2rem;
+        margin: 4rem 2rem;
     }
 }
