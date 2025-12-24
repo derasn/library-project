@@ -390,7 +390,7 @@ a{
     h2{
         font-size: 5rem;
         margin-top: 8rem;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
     }
 
     p{ /* For error messages i.e sorry, no materials */
@@ -426,7 +426,7 @@ a{
     }
 
     .level-cards{
-        margin: 1rem auto;
+        margin: 2rem auto;
         display: flex;
         flex-direction: column;
         align-items: stretch;
@@ -454,11 +454,10 @@ a{
 
     .subjects-container h2{
         font-size: 5rem;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
     }
 
     .subjects-cards{
-        gap: 1rem;
         display: flex;
         flex-direction: column;
         justify-content: center;

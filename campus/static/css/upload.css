@@ -143,7 +143,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
 }
 
 #upload-btn:hover{
-    background-color: #ffca2a;
+    background-color: #ffeaaa;
     border: 0.5rem solid #332600;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
