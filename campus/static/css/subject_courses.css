@@ -137,7 +137,7 @@ h1{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 1rem;
+    margin: 1rem 0;
     padding: 3rem 8rem;
     color: #332600;
     font-size: 4.5rem;
@@ -182,12 +182,12 @@ hr:last-child{
 
 @media (max-width: 600px) {
     .content{
-        margin: 4rem 5rem;
+        margin: 4rem 0;
     }
 
     .previous-page{
         font-size: 3rem;
-        margin: 1rem 0;
+        margin: 1rem 4rem;
     }
 
     .header{
@@ -195,7 +195,7 @@ hr:last-child{
         justify-content: space-between;
         flex-direction: row;
         gap: 3rem;
-        margin-top: 0;
+        margin: 0 1rem;
     }
 
     .header p{
@@ -206,7 +206,7 @@ hr:last-child{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        gap: 2rem;
+        gap: 1.5rem;
     }
 
     #register:hover, #upload:hover{
@@ -225,6 +225,7 @@ hr:last-child{
         font-size: 6rem;
         margin-top: 6rem;
         margin-bottom: 4rem;
+        margin-left: 4rem;
     }
 
     .courses{
@@ -238,7 +239,7 @@ hr:last-child{
         font-weight: 500;
         display: flex;
         flex-direction: row;
-        padding: 0 3rem;
+        margin: 0 3rem;
     }
 
     .course-code{
@@ -248,9 +249,10 @@ hr:last-child{
 
     .material-details{
         margin-top: 1rem;
-        padding: 1rem 2rem;
+        padding: 1rem 1rem;
         font-size: 3rem;
         font-weight: 400;
+        margin-left: 2rem;
     }
 
     .description{
@@ -258,16 +260,16 @@ hr:last-child{
     }
 
     .year-used{
-        width: 1vw;
+        width: 1rem;
     }
 
     .read, .download{
-        width: 3vw;
+        width: 1rem;
     }
 
     p{ /* For error messages i.e sorry, no materials */
-        margin: 0.5rem;
-        padding: 1.5rem 4rem;
+        margin: 0.5rem 2rem;
+        padding: 1.5rem 1rem;
         font-size: 3rem;
         font-weight: 400; 
     }
