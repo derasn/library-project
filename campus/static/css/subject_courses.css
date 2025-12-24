@@ -259,11 +259,21 @@ hr:last-child{
         text-transform: uppercase;
     }
 
+    .materials{
+        color: #332600;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
     .material-details{
         display: flex;
         flex-flow: row nowrap;
-        justify-self: start;
         justify-content: space-between;
+        gap: 1rem;
         width: 100%;
         font-size: 3rem;
         font-weight: 400;
@@ -272,16 +282,6 @@ hr:last-child{
 
     .description{
         width: 20%;
-        padding: 0;
-        margin: 0;
-    }
-
-    .year-used{
-        width: auto;
-    }
-
-    .read, .download{
-        width: auto;
     }
 
     p{ /* For error messages i.e sorry, no materials */
