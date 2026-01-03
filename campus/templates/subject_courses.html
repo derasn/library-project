@@ -13,7 +13,7 @@
 {% block content %}
     <div class="content">
         <div class='header'>
-            <p id='camp'>Camp<span id='us'>US.</span></p>
+            <p id='camp'>Camp<span>US.</span></p>
 
             <div class='auth-buttons'>
                 <a href="{% url 'register' %}"><button id='register'>Register a course</button></a>
@@ -41,7 +41,7 @@
                             {% for material in course.materials.all %}
                                 <div class="material-details">
                                     <div class="description">{{material.description}}</div>
-                                    <div class="year_used"><span id="Used">Used in</span> {{material.year_used}}</div>
+                                    <div class="year_used"><span id="used">Used in</span> {{material.year_used}}</div>
                                     <div class="view"><a href="{{ material.file.url }}" target="_blank">Read now</a></div>
                                     <div class="download"><a href="https://res.cloudinary.com/dnjwg5smv/image/upload/fl_attachment/v1/{{ material.file.name }}">Download</a></div>
                                 </div>

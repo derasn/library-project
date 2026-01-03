@@ -335,7 +335,16 @@ a{
         gap: 0.5rem;
     }
 
-    #register:hover, #upload:hover{
+    #register{
+        display: none;
+    }
+
+    #upload{
+        color: #2400FF;
+        background-color: #FFF2CC;
+    }
+
+    #upload:hover{
         border-width: 0.25rem;
     }
 
@@ -359,7 +368,7 @@ a{
 
     #small-text{
         font-size: 3rem;
-        margin-top: -13rem;
+        margin-top: -12rem;
         font-weight: 500;
     }
 
@@ -368,7 +377,7 @@ a{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        margin-top: 0;
+        margin-top: 0.5rem;
     }
 
     input[type="search"]{
@@ -472,7 +481,7 @@ a{
         width: 100%;
         padding: 4rem 4rem;
         border-radius: 2rem;
-        margin: 0.5rem 0;
+        margin: 0.75rem 0;
         font-size: 3rem;
         font-weight: 400;
         border: 0.25rem solid #332600;

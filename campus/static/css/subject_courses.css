@@ -32,7 +32,7 @@ body{
     color: #2400FF;
 }
 
-#us{
+span{
     color: #FFBF00;
 }
 
@@ -145,7 +145,7 @@ h1{
 }
 
 .description{
-    width: 17vw;
+    width: 20vw;
 }
 
 p{ /* For error messages i.e sorry, no materials */
@@ -283,7 +283,11 @@ hr:last-child{
     }
 
     .description{
-        width: 35%;
+        width: 40%;
+    }
+
+    #used{
+        display: none;
     }
 
     .view{
