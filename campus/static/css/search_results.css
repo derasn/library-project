@@ -55,7 +55,7 @@ h1{
     margin-top: 10rem;
 }
 
-.material-details{
+.search-details{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -113,36 +113,45 @@ p{ /* For error messages i.e sorry, no materials */
     }
 
     .content{
-        margin: 4rem 0;
+        margin: 5rem 0;
     }
 
     .previous-page{
         font-size: 3rem;
-        margin: 3rem 3rem;
+        margin: 0 3rem;
     }
 
     input[type="search"]{
-    width: 100vw;
-    margin-bottom: 5rem;
-    border-radius: 5rem;
-    padding: 3rem 4rem;
-    font-size: 3rem;
-    }
+        width: 90vw;
+        margin: 4rem auto;
+        border-radius: 5rem;
+        padding: 3rem 4rem;
+        font-size: 3rem;
+        }
 
     h2{
-    font-size: 5rem;
-    margin-top: 5rem;
-    }
+        font-size: 5rem;
+        margin-top: 5rem;
+        }
 
-    .material-details{
-    padding: 3rem 2rem;
-    font-size: 3rem;
+    .search-details{
+        padding: 3rem 2rem;
+        font-size: 3rem;
+        display: block;
     }
     
     .course-code{
         display: block;
-        font-size: 3.5rem;
-        font-weight: 400;
+        font-size: 3.2rem;
+        font-weight: 450;
+    }
+
+    .material-details{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0.5rem;
     }
 
     hr{

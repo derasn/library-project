@@ -22,11 +22,14 @@
 
         {% if results %}
             {% for material in results %}
-            <div class="material-details">
+            <div class="search-details">
                 <div class="course-code">{{material.course_code}}</div>
-                <div class="description">{{material.description}}</div>
-                <div class="year-used">{{material.year_used}}</div>
-                <div class="download"><a href="https://res.cloudinary.com/dnjwg5smv/image/upload/fl_attachment/v1/{{ material.file.name }}">Download</a></div>
+
+                <div class="material-details">
+                    <div class="description">{{material.description}}</div>
+                    <div class="year-used">{{material.year_used}}</div>
+                    <div class="download"><a href="https://res.cloudinary.com/dnjwg5smv/image/upload/fl_attachment/v1/{{ material.file.name }}">Download</a></div>
+                </div>
             </div>
             <hr>
             {% endfor %}
