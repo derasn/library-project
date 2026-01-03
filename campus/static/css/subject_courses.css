@@ -283,10 +283,10 @@ hr:last-child{
     }
 
     .description{
-        width: 25%;
+        width: 35%;
     }
 
-    .year_used{
+    .view{
         display: none;
     }
 

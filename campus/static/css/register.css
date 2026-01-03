@@ -179,7 +179,7 @@ input::-webkit-input-placeholder{
     }
 
     p{ /* For error messages i.e sorry, no materials */
-        font-size: 3rem; 
+        font-size: 2rem; 
     }
 
     /* Register Button */

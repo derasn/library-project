@@ -197,7 +197,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
     }
 
     .error-message{
-        font-size: 4rem;
+        font-size: 2rem;
         margin-top: -3rem;
         margin-bottom: 2rem;
     }
