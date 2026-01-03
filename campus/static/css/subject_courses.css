@@ -32,7 +32,7 @@ body{
     color: #2400FF;
 }
 
-span{
+#us{
     color: #FFBF00;
 }
 
@@ -278,7 +278,7 @@ hr:last-child{
         width: 100%;
         font-size: 3rem;
         font-weight: 400;
-        margin: 1rem 0;
+        margin: 2rem 0;
         padding: 0 3rem;
     }
 
@@ -290,8 +290,12 @@ hr:last-child{
         display: none;
     }
 
+    .year-used{
+        display: none;
+    }
+
     p{ /* For error messages i.e sorry, no materials */
-        margin: 1rem 0;
+        margin: 2rem 0;
         font-size: 3rem;
         font-weight: 400;
         padding: 0 3rem;
@@ -300,6 +304,6 @@ hr:last-child{
     hr{
         border: 0.125rem solid #554000;
         width: 95%;
-        margin: 4rem 2rem;
+        margin: 4rem 2rem 5rem;
     }
 }
