@@ -286,11 +286,7 @@ hr:last-child{
         width: 25%;
     }
 
-    #used{
-        display: none;
-    }
-
-    .year-used{
+    .year_used{
         display: none;
     }
 
