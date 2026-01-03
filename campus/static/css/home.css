@@ -14,6 +14,7 @@ body{
 
 .content{
     margin: 0 17rem;
+    max-width: 100%;
 }
 
 
