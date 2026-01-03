@@ -31,7 +31,7 @@
                 {% for material in materials %}
                     <div class="material-details">
                         <div class="description">{{material.description}}</div>
-                        <div class="year_used">Used in {{material.year_used}}</div>
+                        <div class="year-used"><span id="used">Used in</span> {{material.year_used}}</div>
                         <div class="view"><a href="{{ material.file.url }}" target="_blank">Read now</a></div>
                         <div class="download"><a href="https://res.cloudinary.com/dnjwg5smv/image/upload/fl_attachment/v1/{{ material.file.name }}">Download</a></div>
                     </div>

@@ -156,6 +156,10 @@ p{ /* For error messages i.e sorry, no materials */
     font-weight: 400; 
 }
 
+#used{
+    color: #332600;
+}
+
 .download{
     margin-right: 3vw;
 }
@@ -236,7 +240,7 @@ hr:last-child{
     .others h1{
         font-size: 6rem;
         margin-top: 6rem;
-        margin-bottom: 3rem;
+        margin-bottom: 5rem;
     }
 
     .courses{

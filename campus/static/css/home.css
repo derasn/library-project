@@ -311,7 +311,7 @@ a{
     }
 
     .content{
-        margin: 0;
+        margin: 4rem 0;
     }
 
     .header{
@@ -340,7 +340,7 @@ a{
     }
 
     #upload{
-        color: #2400FF;
+        color: #070033;
         background-color: #FFF2CC;
     }
 
@@ -377,7 +377,7 @@ a{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        margin-top: 0.5rem;
+        margin-top: 1.5rem;
     }
 
     input[type="search"]{

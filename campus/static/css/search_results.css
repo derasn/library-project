@@ -108,24 +108,30 @@ p{ /* For error messages i.e sorry, no materials */
 }
 
 @media (max-width: 768px) {
+    *{
+        box-sizing: border-box;
+    }
+
     .content{
-        margin: 4px 5px;
+        margin: 4rem 0;
     }
 
     .previous-page{
         font-size: 3rem;
-        margin: 1rem 0;
-    }
-
-    h1{
-    font-size: 6rem;
-    margin-top: 5rem;
+        margin: 3rem 3rem;
     }
 
     input[type="search"]{
-    width: 80vw;
+    width: 100vw;
     margin-bottom: 5rem;
     border-radius: 5rem;
+    padding: 3rem 4rem;
+    font-size: 3rem;
+    }
+
+    h2{
+    font-size: 5rem;
+    margin-top: 5rem;
     }
 
     .material-details{
@@ -133,10 +139,15 @@ p{ /* For error messages i.e sorry, no materials */
     font-size: 3rem;
     }
     
-    .course-code { flex: 2; min-width: 0; }
-    .description { flex: 3; min-width: 0; }
-    .year-used { flex: 1; min-width: 0; }
+    .course-code{
+        display: block;
+        font-size: 3.5rem;
+        font-weight: 400;
+    }
 
-    .view,
-    .download { flex: 1; }
+    hr{
+        border: 0.125rem solid #554000;
+        width: 95%;
+        margin: 4rem 2rem 5rem;
+    }
 }
