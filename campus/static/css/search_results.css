@@ -39,7 +39,7 @@ body{
 input[type="search"]{
     background-color: #f3f5f7;
     color: #332600;
-    padding: 2.5rem 5rem;
+    padding: 4.5rem 8rem;
     font-size: 3.5rem;
     border-radius: 5rem;
     border: 0.25rem solid #332600;
@@ -95,7 +95,7 @@ hr{
     display: block;
     border: 0.25rem solid #554000;
     width: 90vw;
-    margin: 5rem auto;
+    margin: 4.5rem auto;
 }
 
 hr:last-child{
@@ -116,16 +116,16 @@ p{ /* For error messages i.e sorry, no materials */
     }
 
     .content{
-        margin: 0 1rem;
+        margin: 6rem 1rem;
     }
 
     .previous-page{
         font-size: 3rem;
-        margin: 6rem 3rem;
+        margin: 0 3rem;
     }
 
     input[type="search"]{
-        width: 95vw;
+        width: 93vw;
         margin: 4rem auto;
         border-radius: 5rem;
         padding: 3rem 4rem;
@@ -146,7 +146,7 @@ p{ /* For error messages i.e sorry, no materials */
         font-size: 3.2rem;
         font-weight: 450;
         width: 100%;
-        margin-bottom: 2rem;
+        margin-bottom: 2.5rem;
     }
 
     .material-details{
@@ -154,7 +154,7 @@ p{ /* For error messages i.e sorry, no materials */
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        margin: 0.5rem;
+        margin: 0 0.5rem;
     }
 
     .description{
