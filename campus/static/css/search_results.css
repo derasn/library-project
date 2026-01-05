@@ -41,7 +41,7 @@ input[type="search"]{
     color: #332600;
     padding: 2.5rem 5rem;
     font-size: 3.5rem;
-    border-radius: 3rem;
+    border-radius: 5rem;
     border: 0.25rem solid #332600;
     width: 50vw;
     margin: 5rem 0;
@@ -67,7 +67,7 @@ h2{
     font-size: 4.5rem;
     font-weight: 500;
     width: 100%;
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
 }
 
 .material-details{
@@ -116,7 +116,7 @@ p{ /* For error messages i.e sorry, no materials */
     }
 
     .content{
-        margin: 0 2rem;
+        margin: 0 1rem;
     }
 
     .previous-page{
@@ -130,11 +130,11 @@ p{ /* For error messages i.e sorry, no materials */
         border-radius: 5rem;
         padding: 3rem 4rem;
         font-size: 3rem;
-        }
+    }
 
     h2{
         font-size: 5rem;
-        }
+    }
 
     .search-details{
         padding: 3rem 2rem;
@@ -146,7 +146,7 @@ p{ /* For error messages i.e sorry, no materials */
         font-size: 3.2rem;
         font-weight: 450;
         width: 100%;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
     }
 
     .material-details{
@@ -168,6 +168,6 @@ p{ /* For error messages i.e sorry, no materials */
     hr{
         border: 0.125rem solid #554000;
         width: 95%;
-        margin: 3rem 2rem;
+        margin: 3rem 1rem;
     }
 }
