@@ -3,20 +3,8 @@ from .models import Subject, Course, Material
 from django.core.exceptions import ValidationError
 from django.db.models import Q
 import hashlib
-from django.contrib.auth.models import User
-from django.http import HttpResponse
-
 
 # Create your views here.
-
-def create_super(request):
-    if not User.objects.filter(username="dera").exists():
-        User.objects.create_superuser(
-            username="dera",
-            password="deralovesdjango"
-        )
-        return HttpResponse("Superuser created!")
-    return HttpResponse("Superuser already exists!")
 
 
 def get_file_hash(uploaded_file):
