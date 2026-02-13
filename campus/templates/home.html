@@ -33,20 +33,16 @@
         </form>
 
 
-        <h2>Featured Courses</h2>
-        <div class='cards-container'>
-            {% if featured_courses %}
-                {% for course in featured_courses %}
-                    <a href="{% url 'course_details' course.id %}" id="ft-link">
-                        <div class='card'>  
-                            <h3>{{course.course_code}}</h3>
-                        </div>
-                    </a>
+        <h2>Recently Added Materials</h2>
+            <div class='materials-container'>
+                {% for material in materials %}
+                    <div class="material-details">
+                        <p class="description">{{material.description}}</p>
+                        <p>Uploaded on {{material.uploaded_at}}</p>
+                        <p class="download"><a href="https://res.cloudinary.com/dnjwg5smv/image/upload/fl_attachment/v1/{{ material.file.name }}">Download</a></p>
+                    </div>
                 {% endfor %}
-            {% else %}
-                <p>No featured course available.</p>
-            {% endif %}
-        </div>
+            </div>
 
 
         <div class="levels-container">
@@ -55,7 +51,7 @@
             <div class="level-cards">
                 {% for level in levels %}
                     <a href="{% url 'level_courses' level %}">
-                        <div class="level-card">{{level}} Level</div>
+                        <p class="level-card">{{level}} Level</p>
                     </a>
                 {% endfor %}
             </div>
@@ -68,7 +64,7 @@
             <div class="subjects-cards">
                 {% for subject in subject %}
                     <a href="{% url 'subject_courses' subject.id %}">
-                        <div class="s-card">{{subject.name}}</div>
+                        <p class="s-card">{{subject.name}}</p>
                     </a>
                 {% endfor %}
             </div>

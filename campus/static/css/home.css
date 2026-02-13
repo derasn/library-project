@@ -124,7 +124,7 @@ input[type="search"]{
     transform: scale(1.01);
 }
 
-/* Featured Courses */
+/* Recently added materials */
 
 h2{
     color: #332600;
@@ -132,56 +132,25 @@ h2{
     font-weight: bold;
 }
 
-p{ /* For error messages i.e sorry, no materials */
-    margin: 0.5rem;
-    padding: 3rem 8rem;
-    color: #332600;
-    font-size: 5rem;
-    font-weight: 400; 
+.materials-container{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-bottom: 10rem;
 }
 
-.card{
-    width: 17vw;
-    text-align: center;
-    padding: 5rem 3rem;
-    background-color: #492aff;
-    color: #D3CCFF;
-    border-radius: 4rem;
-    display: grid;
-    place-items: center;
-}
-
-.card h3{
-    width: 5vw;
-    font-size: 6.5rem;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.cards-container{
+.material-details{
+    padding: 3rem 5rem;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: stretch;
-    overflow-x: auto;
-    gap: 8rem;
+    justify-content: space-between;
+    align-items: center;
 }
-
-.cards-container::-webkit-scrollbar{
-    display: none;
-}
-
 
 /* Filtering by Level */
 
 .levels-container{
     margin-top: 15rem;
-}
-
-h2{
-    color: #332600;
-    font-size: 7rem;
-    font-weight: bold;
 }
 
 .level-cards{
@@ -212,12 +181,6 @@ h2{
 
 .subjects-container{
     margin-top: 15rem;
-}
-
-.subjects-container h2{
-    color: #332600;
-    font-size: 7rem;
-    font-weight: bold;
 }
 
 .subjects-cards{
@@ -400,13 +363,13 @@ a{
 
     /* Featured Courses */
     h2{
-        font-size: 5rem;
+        font-size: 4.5rem;
         margin-top: 8rem;
         margin-bottom: 2rem;
     }
 
     p{ /* For error messages i.e sorry, no materials */
-        font-size: 4rem; 
+        font-size: 3rem; 
     }
 
     .cards-container{
@@ -425,7 +388,7 @@ a{
     }
 
     .card h3{
-        font-size: 4rem;
+        font-size: 3.5rem;
         text-align: center;
     }
 
@@ -465,7 +428,7 @@ a{
     }
 
     .subjects-container h2{
-        font-size: 5rem;
+        font-size: 4.5rem;
         margin-bottom: 2rem;
     }
 

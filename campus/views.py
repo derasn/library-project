@@ -3,21 +3,8 @@ from .models import Subject, Course, Material
 from django.core.exceptions import ValidationError
 from django.db.models import Q
 import hashlib
-from django.contrib.auth.models import User
-from django.http import HttpResponse
-
 
 # Create your views here.
-
-def create_super(request):
-    if not User.objects.filter(username="dera").exists():
-        User.objects.create_superuser(
-            username="dera",
-            password="deralovesdjango"
-        )
-        return HttpResponse("Superuser created!")
-    return HttpResponse("Superuser already exists!")
-
 
 
 def get_file_hash(uploaded_file):
@@ -35,13 +22,13 @@ def home(request):
     subject = Subject.objects.all()
     course = Course.objects.all()
     levels = [100, 200, 300, 400]
-    featured_courses = Course.objects.filter(featured=True)
+    recent_materials = Material.objects.all().order_by('-uploaded_at')[:5]
 
     context = {
         'subject' : subject,
         'courses' : course,
         'levels' : levels,
-        'featured_courses' : featured_courses,
+        'materials' : recent_materials,
     }
     return render(request,'home.html', context)
 
