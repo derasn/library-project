@@ -16,7 +16,7 @@
         <p id='camp'>Camp<span id="us">US.</span></p>
 
         <div class='auth-buttons'>
-            <a href="{% url 'register' %}"><button id='register'>Register a course</button></a>
+            <a href="{% url 'register' %}"><button id='register'>Add a course</button></a>
             <a href="{% url 'upload' %}"><button id='upload'>Upload a material</button></a>
         </div>
     </div>
@@ -37,6 +37,7 @@
             <div class='materials-container'>
                 {% for material in materials %}
                     <div class="material-details">
+                        <p class="course-code">{{material.course_code}}</p>
                         <p class="description">{{material.description}}</p>
                         <p>Uploaded on {{material.uploaded_at}}</p>
                         <p class="download"><a href="https://res.cloudinary.com/dnjwg5smv/image/upload/fl_attachment/v1/{{ material.file.name }}">Download</a></p>
@@ -73,7 +74,7 @@
 
         <div class="buttons">
             <div id='button1-2'>
-                <a href="{% url 'register' %}"><button class='register'>Register a course</button></a>
+                <a href="{% url 'register' %}"><button class='register'>Add a course</button></a>
                 <a href="{% url 'upload' %}"><button class='upload'>Upload a material</button></a>
             </div>
         </div>
