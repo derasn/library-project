@@ -214,6 +214,10 @@ hr:last-child{
         gap: 0.5rem;
     }
 
+    #register{
+        display: none;
+    }
+
     #register:hover, #upload:hover{
         border-width: 0.25rem;
     }

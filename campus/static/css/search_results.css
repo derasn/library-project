@@ -125,8 +125,8 @@ p{ /* For error messages i.e sorry, no materials */
     }
 
     input[type="search"]{
-        width: 93vw;
-        margin: 4rem auto;
+        width: 90vw;
+        margin: 3rem auto;
         border-radius: 5rem;
         padding: 3rem 4rem;
         font-size: 3rem;
@@ -163,6 +163,11 @@ p{ /* For error messages i.e sorry, no materials */
 
     .view{
         display: none;
+    }
+
+    p{
+        font-size: 3rem;
+        
     }
 
     hr{
