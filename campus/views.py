@@ -102,7 +102,7 @@ def upload_material(request):
             file_hash = get_file_hash(uploaded_material)
 
             if Material.objects.filter(file_hash=file_hash):
-                errors.append("Hi, so this material has already been uploaded, thanks for the effort.")
+                errors.append("Hi, this material has already been uploaded. Thanks for the effort.")
 
             else:
                 new_upload = Material(
