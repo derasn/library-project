@@ -91,7 +91,7 @@ button{
     color: #332600;
     font-size: 7rem;
     font-weight: bold;
-    margin: 0 auto
+    margin: -10px auto
 }
 
 input[type="search"]{
@@ -138,7 +138,7 @@ h2{
 }
 
 .material-details{
-    margin: 2rem 5rem;
+    margin: 1rem 5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -146,7 +146,11 @@ h2{
 }
 
 p{
-    font-size: 4rem;
+    font-size: 4.5rem;
+}
+
+.course-code{
+    width: 30%;
 }
 
 /* Filtering by Level */
@@ -282,8 +286,7 @@ a{
     .header{
         display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
+        justify-content: flex-end;
         gap: 3rem;
         margin: 0;
     }
@@ -324,7 +327,7 @@ a{
     }
 
     .main{
-        margin: 4rem 2rem;
+        margin: 6rem 2rem;
     }
 
     .main h1{
@@ -334,7 +337,7 @@ a{
 
     #small-text{
         font-size: 3rem;
-        margin-top: 0;
+        margin-top: 1px;
         font-weight: 500;
     }
 
@@ -343,7 +346,7 @@ a{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        margin-top: 3rem;
+        margin-top: 5px;
     }
 
     input[type="search"]{
@@ -370,12 +373,16 @@ a{
         margin-bottom: 2rem;
     }
 
-    p{ /* For error messages i.e sorry, no materials */
+    p{
         font-size: 3rem; 
     }
 
     .material-details{
-        margin: 2rem 5rem;
+        margin: 1rem 3rem;
+    }
+
+    .course-code{
+        display: block;
     }
 
 
