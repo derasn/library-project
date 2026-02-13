@@ -91,7 +91,7 @@ button{
     color: #332600;
     font-size: 7rem;
     font-weight: bold;
-    margin: -10px auto
+    margin: -20px auto 0;
 }
 
 input[type="search"]{
@@ -138,7 +138,7 @@ h2{
 }
 
 .material-details{
-    margin: 1rem 5rem;
+    margin: 2px 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -151,6 +151,10 @@ p{
 
 .course-code{
     width: 30%;
+}
+
+.description{
+    width: 10%;
 }
 
 /* Filtering by Level */
