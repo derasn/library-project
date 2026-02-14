@@ -138,7 +138,8 @@ h2{
 }
 
 .material-details{
-    margin: 2px 20px;
+    margin: 1px 20px;
+    padding: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -160,24 +161,25 @@ p{
 /* Filtering by Level */
 
 .levels-container{
-    margin-top: 15rem;
+    margin-top: 10rem;
 }
 
 .level-cards{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 3rem;
 }
 
 .level-card{
-    width: 35vw;
-    padding: 9rem 15rem;
+    width: 48%;
+    padding: 4rem 2rem;
     background-color: #D3CCFF;
     border: 0.75rem solid #070033;
     color: #070033;
     border-radius: 2.5rem;
     text-align: center;
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
     font-size: 6rem;
     font-weight: 500;
 }
@@ -190,13 +192,14 @@ p{
 /* Subjects */
 
 .subjects-container{
-    margin-top: 15rem;
+    margin-top: 10rem;
 }
 
 .subjects-cards{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 2rem;
 }
 
 .subjects-cards a{
@@ -204,15 +207,15 @@ p{
 }
 
 .s-card{
-    width: 20.5vw;
-    padding: 5rem 15rem;
+    width: 31%;
+    padding: 3rem 2rem;
     background-color: #ffca2a;
     border: 0.5rem solid #332600;
     color: #332600;
     border-radius: 3rem;
     text-align: center;
     text-transform: capitalize;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     font-size: 5rem;
     font-weight: 400;
 }
@@ -276,6 +279,12 @@ p{
 
 a{
     text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+    .level-card, .s-card{
+        width: 48%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -408,10 +417,9 @@ a{
     }
 
     .level-card{
-        display: block;
         width: 100%;
         max-width: none;
-        padding: 6rem 4rem;
+        padding: 2.5rem 1.5rem;
         margin: 1rem 0;
         font-size: 3.5rem;
         text-align: center;
@@ -439,9 +447,8 @@ a{
     }
 
     .s-card{
-        display: block;
-        width: 100%;
-        padding: 4rem 4rem;
+        width: 48%;
+        padding: 2rem 1rem;
         border-radius: 2rem;
         margin: 0.75rem 0;
         font-size: 3rem;
