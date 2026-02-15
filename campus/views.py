@@ -117,8 +117,9 @@ def upload_material(request):
                 try:
                     new_upload.full_clean()
                     new_upload.save()
+
                     messages.success(request, "Material uploaded successfully!")
-                    return redirect('home')
+                    return redirect('upload')
                 
                 except ValidationError as err:
                     errors = err.messages
@@ -151,6 +152,6 @@ def register_course(request):
             )
             new_course.save()
             messages.success(request, "Course added successfully!")
-            return redirect('home')
+            return redirect('register')
         
     return render(request, 'register.html', {'subjects': subjects})

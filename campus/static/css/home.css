@@ -124,17 +124,19 @@ input[type="search"]{
 
 /* Recently added Materials */
 
+.materials-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 7rem;
+    margin-top: 10rem;
+}
+
 h2{
     color: #332600;
     font-size: 7rem;
     font-weight: bold;
-}
-
-.materials-container{
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    margin-bottom: 10rem;
+    text-align: left;
 }
 
 .material-details{
@@ -143,10 +145,13 @@ h2{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-top: 6rem;
 }
 
 p{
     font-size: 4.5rem;
+    text-align: left;
+    font-weight: normal;
 }
 
 .course-code{
@@ -160,10 +165,11 @@ p{
 /* Filtering by Level */
 
 .levels-container{
-    margin-top: 15rem;
+    margin-top: 10rem;
 }
 
 .level-cards{
+    margin-top: 6rem;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -177,7 +183,7 @@ p{
     color: #070033;
     border-radius: 2.5rem;
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     font-size: 6rem;
     font-weight: 500;
 }
@@ -190,10 +196,11 @@ p{
 /* Subjects */
 
 .subjects-container{
-    margin-top: 15rem;
+    margin-top: 10rem;
 }
 
 .subjects-cards{
+    margin-top: 6rem;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -212,7 +219,7 @@ p{
     border-radius: 3rem;
     text-align: center;
     text-transform: capitalize;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-size: 5rem;
     font-weight: 400;
 }
