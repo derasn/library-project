@@ -84,7 +84,7 @@ button{
     font-size: 18rem;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 0;
+    margin-bottom: -10px;
 }
 
 #small-text{
@@ -124,17 +124,17 @@ input[type="search"]{
 
 /* Recently added Materials */
 
+.materials-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 8rem auto;
+}
+
 h2{
     color: #332600;
     font-size: 7rem;
     font-weight: bold;
-}
-
-.materials-container{
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    margin-bottom: 10rem;
 }
 
 .material-details{
@@ -161,7 +161,7 @@ p{
 /* Filtering by Level */
 
 .levels-container{
-    margin-top: 10rem;
+    margin-top: 8rem;
 }
 
 .level-cards{
@@ -179,7 +179,7 @@ p{
     color: #070033;
     border-radius: 2.5rem;
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     font-size: 6rem;
     font-weight: 500;
 }
@@ -192,7 +192,7 @@ p{
 /* Subjects */
 
 .subjects-container{
-    margin-top: 10rem;
+    margin-top: 8rem;
 }
 
 .subjects-cards{
@@ -216,7 +216,7 @@ p{
     border-radius: 3rem;
     text-align: center;
     text-transform: capitalize;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     font-size: 5rem;
     font-weight: 400;
 }
