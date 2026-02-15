@@ -143,7 +143,7 @@ h2{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: 0.25rem;
     margin-top: 3rem;
 }
 
