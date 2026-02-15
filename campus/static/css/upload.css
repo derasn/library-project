@@ -73,11 +73,18 @@ h2{
 }
 
 .error-message{
-    font-size: 4rem;
     color: red;
+}
+
+.error-message, .message-container{
+    font-size: 4rem;
     text-align: center;
     margin-top: -5rem;
     margin-bottom: 3rem;
+}
+
+.message-container{
+    color: green;
 }
 
 .upload-form{
@@ -196,7 +203,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
         border-radius: 1.5rem;
     }
 
-    .error-message{
+    .error-message, .message-container{
         font-size: 2rem;
         margin-top: -3rem;
         margin-bottom: 2rem;

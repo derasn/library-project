@@ -25,8 +25,14 @@
             <div class="error-container">
                 {% for error in errors %}
                     <p class="error-message">{{error}}</p>
-                {% endfor %}
+                {% endfor %}i
             </div>
+        {% endif %}
+
+        {% if messages %}
+            {% for message in messages %}
+                <div class="message-container">{{ message }}</div>
+            {% endfor %}
         {% endif %}
 
         <form method='POST' enctype="multipart/form-data" action="" class="upload-form">

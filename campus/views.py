@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Subject, Course, Material
 from django.core.exceptions import ValidationError
+from django.contrib import messages
 from django.db.models import Q
 import hashlib
 
@@ -22,7 +23,7 @@ def home(request):
     subject = Subject.objects.all()
     course = Course.objects.all()
     levels = [100, 200, 300, 400]
-    recent_materials = Material.objects.all().order_by('-uploaded_at')[:5]
+    recent_materials = Material.objects.all().order_by('-uploaded_at')[:4]
 
     context = {
         'subject' : subject,
@@ -116,6 +117,7 @@ def upload_material(request):
                 try:
                     new_upload.full_clean()
                     new_upload.save()
+                    messages.success(request, "Material uploaded successfully!")
                     return redirect('home')
                 
                 except ValidationError as err:
@@ -148,6 +150,7 @@ def register_course(request):
                 level = level
             )
             new_course.save()
+            messages.success(request, "Course added successfully!")
             return redirect('home')
         
     return render(request, 'register.html', {'subjects': subjects})

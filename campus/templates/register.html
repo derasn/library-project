@@ -21,6 +21,12 @@
 
         <h2>Add a Course</h2>
 
+        {% if messages %}
+            {% for message in messages %}
+                <div class="message-container">{{ message }}</div>
+            {% endfor %}
+        {% endif %}
+
         <form method='POST' enctype="multipart/form-data" class="register-form">
             {% csrf_token %}
 

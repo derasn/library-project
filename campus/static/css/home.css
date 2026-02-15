@@ -204,10 +204,11 @@ p{
 
 .subjects-cards a{
     text-decoration: none;
+    width: 31%;
 }
 
 .s-card{
-    width: 31%;
+    width: 100%;
     padding: 3rem 2rem;
     background-color: #ffca2a;
     border: 0.5rem solid #332600;
@@ -282,7 +283,7 @@ a{
 }
 
 @media (max-width: 1024px) {
-    .level-card, .s-card{
+    .level-card, .subjects-cards a{
         width: 48%;
     }
 }
@@ -446,8 +447,13 @@ a{
         width: 100%;
     }
 
-    .s-card{
+    .subjects-cards a{
         width: 48%;
+        max-width: none;
+        margin: 0.75rem 0;
+    }
+
+    .s-card{
         padding: 2rem 1rem;
         border-radius: 2rem;
         margin: 0.75rem 0;
