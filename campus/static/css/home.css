@@ -167,13 +167,12 @@ p{
 .level-cards{
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    gap: 3rem;
+    justify-content: space-between
 }
 
 .level-card{
     width: 48%;
-    padding: 4rem 2rem;
+    padding: 9rem 15rem;
     background-color: #D3CCFF;
     border: 0.75rem solid #070033;
     color: #070033;
@@ -198,18 +197,16 @@ p{
 .subjects-cards{
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    gap: 2rem;
+    justify-content: space-between;
 }
 
 .subjects-cards a{
     text-decoration: none;
-    width: 31%;
 }
 
 .s-card{
-    width: 100%;
-    padding: 3rem 2rem;
+    width: 32%;
+    padding: 5rem 15rem;
     background-color: #ffca2a;
     border: 0.5rem solid #332600;
     color: #332600;
