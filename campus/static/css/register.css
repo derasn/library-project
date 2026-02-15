@@ -73,11 +73,11 @@ h2{
 }
 
 .message-container{
-    font-size: 5rem;
+    font-size: 4.5rem;
     color: green;
     text-align: center;
-    margin-top: -5rem;
-    margin-bottom: 5rem;
+    margin-top: -7rem;
+    margin-bottom: 6rem;
 }
 
 .register-form{

@@ -92,6 +92,7 @@ button{
     font-size: 7rem;
     font-weight: bold;
     margin: -20px auto 0;
+    text-align: center;
 }
 
 input[type="search"]{
@@ -127,8 +128,6 @@ input[type="search"]{
 .materials-container{
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    margin-bottom: 7rem;
     margin-top: 10rem;
 }
 
@@ -140,12 +139,12 @@ h2{
 }
 
 .material-details{
-    margin: 2px 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 6rem;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
 }
 
 p{
@@ -169,7 +168,7 @@ p{
 }
 
 .level-cards{
-    margin-top: 6rem;
+    margin-top: 3rem;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -200,7 +199,7 @@ p{
 }
 
 .subjects-cards{
-    margin-top: 6rem;
+    margin-top: 3rem;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
