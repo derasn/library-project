@@ -84,7 +84,7 @@ button{
     font-size: 18rem;
     font-weight: bold;
     text-align: center;
-    margin-bottom: -10px;
+    margin-bottom: 0;
 }
 
 #small-text{
@@ -124,22 +124,21 @@ input[type="search"]{
 
 /* Recently added Materials */
 
-.materials-container{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin: 8rem auto;
-}
-
 h2{
     color: #332600;
     font-size: 7rem;
     font-weight: bold;
 }
 
+.materials-container{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-bottom: 10rem;
+}
+
 .material-details{
-    margin: 1px 20px;
-    padding: 0;
+    margin: 2px 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -161,17 +160,17 @@ p{
 /* Filtering by Level */
 
 .levels-container{
-    margin-top: 8rem;
+    margin-top: 15rem;
 }
 
 .level-cards{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .level-card{
-    width: 48%;
+    width: 35vw;
     padding: 9rem 15rem;
     background-color: #D3CCFF;
     border: 0.75rem solid #070033;
@@ -191,7 +190,7 @@ p{
 /* Subjects */
 
 .subjects-container{
-    margin-top: 8rem;
+    margin-top: 15rem;
 }
 
 .subjects-cards{
@@ -205,7 +204,7 @@ p{
 }
 
 .s-card{
-    width: 32%;
+    width: 20.5vw;
     padding: 5rem 15rem;
     background-color: #ffca2a;
     border: 0.5rem solid #332600;
@@ -277,12 +276,6 @@ p{
 
 a{
     text-decoration: none;
-}
-
-@media (max-width: 1024px) {
-    .level-card, .subjects-cards a{
-        width: 48%;
-    }
 }
 
 @media (max-width: 768px) {
@@ -415,9 +408,10 @@ a{
     }
 
     .level-card{
+        display: block;
         width: 100%;
         max-width: none;
-        padding: 2.5rem 1.5rem;
+        padding: 6rem 4rem;
         margin: 1rem 0;
         font-size: 3.5rem;
         text-align: center;
@@ -444,14 +438,10 @@ a{
         width: 100%;
     }
 
-    .subjects-cards a{
-        width: 48%;
-        max-width: none;
-        margin: 0.75rem 0;
-    }
-
     .s-card{
-        padding: 2rem 1rem;
+        display: block;
+        width: 100%;
+        padding: 4rem 4rem;
         border-radius: 2rem;
         margin: 0.75rem 0;
         font-size: 3rem;
